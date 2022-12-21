@@ -1,0 +1,111 @@
+/**
+ * _uqam-variables.scss
+ * Variable lié à l'UQAM
+ * Mixin pour aider à créer du CSS
+ */
+
+// Couleurs facultaires
+// https://wiki.uqam.ca/display/PSAVI/Couleurs+facultaires
+$uqam-bg: #0079be;
+$uqam-bg-dark: #00243A;
+$uqam-border-color: #0079BE;
+$uqam-line-color: #81929C;
+
+$esg-bg: #c0311a;
+$com-bg: #eeb111;
+$pol-bg: #5091cd;
+$art-bg: #7b7d72;
+$sci-bg: #40b239;
+$edu-bg: #f57b20;
+$fsh-bg: #af006e;
+$vie-bg: #00ade6;
+
+// Accordeons
+$accordeons: var(--global-accordion-color, #efefef);
+$accordeons-alt: var(--global-accordion-color-alt, #333);
+$accordeons-text: var(--global-accordion-color-text, #FFF);
+$accordeons-layout: center right / 13px no-repeat;
+
+// Autres Variable
+$couleur-bordure: #ccc;
+$service-padding-bloc: 25px;
+
+// Images
+$gabarit_url: 'https://gabarit-adaptatif.uqam.ca/statique/images/icones';
+
+
+// Mixin background-image
+// @include bg-image($image, $bg-options);
+// $bg-options: (ex. no-repeat center center)
+@mixin bg-image($image, $bg-options) {
+	background: url('#{$gabarit_url}/png/#{$image}@2x.png') $bg-options;
+	background: url('#{$gabarit_url}/svg/#{$image}.svg') $bg-options;
+}
+
+
+// Mixin mask image
+// @include mask-image($image, $bg-options);
+// $bg-options: (ex. no-repeat center center)
+@mixin mask-image($image, $bg-options) {
+	mask: url('#{$gabarit_url}/svg/#{$image}.svg') $bg-options;
+}
+
+//helper pour ajouter une classe a l'élément parent
+@mixin variant($selector) {
+	@at-root #{&} #{$selector} {
+		@content;
+	}
+}
+
+//Mask CSS pour +/- colorpicker
+$plus_blanc: url(#{$gabarit_url}/svg/plus_blanc.svg);
+$moins_blanc: url(#{$gabarit_url}/svg/moins_blanc.svg);
+
+
+// Mixin des blocs de couleurs des faculte
+// ex: @include couleurFaculte(#mainframe-header, background-color);
+@mixin couleurFaculte($selector, $property) {
+	#{$selector}.uqam {
+		#{$property}: $uqam-bg;
+	}
+	#{$selector}.esg-faculte {
+		#{$property}: $esg-bg;
+	}
+	#{$selector}.com-faculte {
+		#{$property}: $com-bg;
+	}
+	#{$selector}.pol-faculte {
+		#{$property}: $pol-bg;
+	}
+	#{$selector}.art-faculte {
+		#{$property}: $art-bg;
+	}
+	#{$selector}.sci-faculte {
+		#{$property}: $sci-bg;
+	}
+	#{$selector}.edu-faculte {
+		#{$property}: $edu-bg;
+	}
+	#{$selector}.fsh-faculte {
+		#{$property}: $fsh-bg;
+	}
+	#{$selector}.vie-faculte {
+		#{$property}: $vie-bg;
+	}
+}
+
+// Mixin pour les border-radius ALL
+// @include radius($value);
+@mixin radius($value) {
+	border-radius: $value;
+	-moz-border-radius: $value;
+	-webkit-border-radius: $value;
+}
+
+
+// Mixin pour les border-radius avec un side
+@mixin radius-side($value, $side) {
+	border-#{$side}-radius: $value;
+	-moz-border-#{$side}-radius: $value;
+	-webkit-border-#{$side}-radius: $value;
+}

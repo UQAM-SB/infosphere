@@ -1,0 +1,98 @@
+@charset "UTF-8";
+/**
+ * menuHorizontal.scss
+ * Tout ce qui concerne le menu horzontal qui se retrouve en dessous du fil ariane
+ */
+/**
+ * _uqam-variables.scss
+ * Variable lié à l'UQAM
+ * Mixin pour aider à créer du CSS
+ */
+/**
+ * _media-queries.scss
+ * MEDIA QUERIES
+ * Provient de: https://glennmccomb.com/articles/useful-sass-scss-media-query-mixins-for-bootstrap/
+ * Par Glenn McComb
+ *
+ * Fonctions à utiliser pour créer des Media Queries
+ */
+.top-menu-wrapper {
+  background: var(--menu-bg-color-horizontal);
+  position: relative;
+  z-index: 10;
+}
+.top-menu-wrapper .top-menu ul.horizontal-menu > li {
+  background-color: var(--menu-bg-color-horizontal);
+  margin-right: 4px;
+}
+.top-menu-wrapper .top-menu ul.horizontal-menu > li > a {
+  color: var(--menu-text-color-horizontal);
+  padding: 20px;
+}
+.top-menu-wrapper .top-menu ul.horizontal-menu > li > a:focus, .top-menu-wrapper .top-menu ul.horizontal-menu > li > a:hover, .top-menu-wrapper .top-menu ul.horizontal-menu > li > a:active {
+  background-color: var(--menu-bg-color-2-horizontal);
+}
+.top-menu-wrapper .top-menu ul.horizontal-menu > li > ul {
+  background-color: var(--menu-bg-color-2-horizontal);
+  padding: 20px 20px 15px;
+  margin: 0;
+  border: 0;
+}
+.top-menu-wrapper .top-menu ul.horizontal-menu > li > ul > li {
+  list-style: none;
+  margin: 0 0 5px;
+  min-width: 250px;
+}
+.top-menu-wrapper .top-menu ul.horizontal-menu > li > ul > li a {
+  padding: 4px 40px 4px 25px;
+  position: relative;
+  color: var(--menu-text-color-horizontal);
+}
+.top-menu-wrapper .top-menu ul.horizontal-menu > li > ul > li a:before {
+  content: "";
+  -webkit-mask: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/puce.svg") no-repeat center left/contain;
+          mask: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/puce.svg") no-repeat center left/contain;
+  background-color: #000;
+  position: absolute;
+  left: 0.5rem;
+  top: 0.75rem;
+  height: 0.45rem;
+  width: 0.45rem;
+  opacity: 0.3;
+  padding: 0 0.5rem;
+}
+.top-menu-wrapper .top-menu ul.horizontal-menu > li > ul > li.current-menu-item a,
+.top-menu-wrapper .top-menu ul.horizontal-menu > li > ul > li a:hover,
+.top-menu-wrapper .top-menu ul.horizontal-menu > li > ul > li a:active,
+.top-menu-wrapper .top-menu ul.horizontal-menu > li > ul > li a:focus {
+  background-color: var(--menu-bg-color-horizontal);
+}
+.top-menu-wrapper .top-menu ul.horizontal-menu > li:hover > ul {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+.top-menu-wrapper .top-menu ul.horizontal-menu > li.current-menu-item > a, .top-menu-wrapper .top-menu ul.horizontal-menu > li.current-menu-ancestor > a, .top-menu-wrapper .top-menu ul.horizontal-menu > li:hover > a {
+  background-color: var(--menu-bg-color-2-horizontal);
+}
+.top-menu-wrapper .top-menu ul.horizontal-menu > li.menu-item-has-children > a {
+  padding-right: 30px;
+}
+.top-menu-wrapper .top-menu ul.horizontal-menu > li.menu-item-has-children > a:after {
+  background-color: var(--menu-text-color-horizontal);
+  content: "";
+  display: inline-block;
+  margin-left: 15px;
+  -webkit-mask: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/fleche_blanc_bas.svg") no-repeat center;
+          mask: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/fleche_blanc_bas.svg") no-repeat center;
+  height: 6px;
+  width: 11px;
+}
+.top-menu-wrapper .top-menu ul.horizontal-menu .dropdown-header {
+  font-size: inherit;
+  padding: inherit;
+}
+.top-menu-wrapper .top-menu ul.horizontal-menu .dropdown-item {
+  white-space: normal;
+  word-break: inherit;
+}/*# sourceMappingURL=menuHorizontal.css.map */

@@ -1,0 +1,429 @@
+/**
+ * gutenberg.scss
+ * Style custom pour tous les blocs Gutenberg et Advanced Gutenberg
+ */
+
+// Import
+@import "../../assets/styles/uqam-variables";
+@import "../../assets/styles/media-queries";
+
+// Variables
+$tabs_coul_bg: rgba(0, 121, 190, 0.1);
+$tabs_coul_txt: #005E93;
+
+
+// Colonne
+.wp-block-columns {
+	margin-bottom: 0;
+
+	.wp-block-column {
+		margin-bottom: 25px;
+
+		@include respond-above(lg) {
+			margin-bottom: 40px;
+		}
+
+		h2, h3, h4, h5, h6 {
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+	}
+}
+
+
+// Boutton
+.wp-block-buttons,
+.submit-container {
+	.wp-block-button,
+	.nf-field-element {
+		margin: 0 15px 15px 0;
+		a,
+		input[type=button]{
+			background-image: none;
+			background-color: $uqam-bg;
+			border-radius: 0 !important;
+			color: #FFF;
+			font-size: 1rem;
+			padding: 13px 16px 12px;
+			text-transform: uppercase;
+			&:hover {
+				color: #FFF;
+				background-color: $uqam-bg-dark;
+			}
+		}
+		&.is-style-fleche {
+
+			a {
+				padding-right: 50px;
+				position: relative;
+				&:after {
+					@include mask-image(fleche_blanc, center center / 7px 13px no-repeat);
+					background-color: #FFF;
+					content: '';
+					display: inline-block;
+					position: absolute;
+						right: 15px;
+						top: 0;
+					height: 100%;
+					width: 7px;
+				}
+			}
+		}
+	}
+}
+
+
+// Citation
+.wp-block-quote,
+.wp-block-pullquote {
+	border-left: 3px solid $couleur-bordure;
+	padding: 2px 0 2px 25px;
+	text-align: left;
+	p {
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	&.is-style-large {
+		padding-left: 40px;
+		font-size: 1.5rem;
+		p {
+			font-style: normal;
+		}
+	}
+}
+.wp-block-pullquote {
+	font-size: 1.5rem;
+	float: right;
+	padding-left: 40px;
+	@include respond-above(md) {
+		margin-left: 40px;
+		width: 40%;
+	}
+
+}
+
+
+// Fichier
+.wp-block-file {
+	.wp-block-file__button {
+		display: none;
+	}
+}
+
+
+// Images
+// -- Image
+.wp-block-image figure.alignleft {
+	margin-top: 1rem;
+}
+
+// -- Galerie
+.content-center {
+	.wp-block-gallery {
+		padding: 0;
+		.blocks-gallery-grid {
+			padding: 0;
+		}
+	}
+}
+
+// -- Média & texte
+.wp-block-media-text {
+	.wp-block-media-text__content {
+		.has-large-font-size {
+			font-size: 1rem;
+		}
+	}
+}
+
+
+
+
+//------------------ ADVANCED GUTENBERG
+
+// Tabs
+#main-content {
+	.advgb-tabs-wrapper {
+		margin: 1.25rem 0;
+		.advgb-tabs-panel {
+			.advgb-tab {
+				background-color: $accordeons !important;
+				border: 0 !important;
+				border-radius: 0 !important;
+				padding: 0;
+				&:before {
+					content: none;
+				}
+				a {
+					color: $accordeons-alt !important;
+				}
+				&-active,
+				&:hover {
+					background-color: $accordeons-alt !important;
+					a {
+						color: $accordeons-text !important;
+					}
+				}
+			}
+		}
+		.advgb-tab-body-wrapper {
+			border: none !important;
+			.advgb-tab-body {
+				padding: 20px 40px;
+				&-container {
+					.advgb-tab-body-header {
+						font-size: 1.125rem;
+						line-height: 1.8;
+						position: relative;
+						&:after{
+							content: '';
+							@include mask-image(plus, $accordeons-layout);
+							background-color: $accordeons-alt;
+							height: 100%;
+							position: absolute;
+							right: 15px;
+							top: 50%;
+							transform: translateY(-50%);
+							width: 15px;
+						}
+					}
+					.header-active {
+						background-color: $accordeons-alt !important;
+						color: $accordeons-text !important;
+						&:after{
+							content: none;
+						}
+					}
+					.advgb-tab-body {
+						border: 1px solid $accordeons-alt;
+					}
+				}
+			}
+		}
+	}
+	@include respond-above(md) {
+		.advgb-tab-horz-tablet {
+			.advgb-tab {
+				margin: 3px 3px 0 0;
+			}
+		}
+		.advgb-tab-vert-tablet {
+			.advgb-tab {
+				margin: 0 0 3px 0;
+			}
+		}
+	}
+	@media only screen and (min-width: 1024px) {
+		.advgb-tab-horz-desktop {
+			.advgb-tab {
+				margin: 3px 3px 0 0;
+			}
+		}
+		.advgb-tab-vert-desktop {
+			.advgb-tab {
+				margin: 0 0 3px 0;
+			}
+		}
+	}
+}
+
+// Image Slider
+.advgb-images-slider-block {
+	.slick-dots {
+		display: none !important;
+	}
+}
+
+// Message
+#main-content {
+	.blue-message,
+	.green-message,
+	.orange-message,
+	.red-message,
+	.grey-message {
+		background-color: #FFF;
+		border: 1px solid #00000034;
+		color: var(--global-text-color);
+		font-size: 1rem;
+		padding: 40px 40px 40px 80px;
+		position: relative;
+		&:before {
+			background-color: #00000034;
+			content: '';
+			display: inline-block;
+			@include mask-image(message-info, center center / 32px 32px no-repeat);
+			position: absolute;
+				left: 25px;
+				top: 35px;
+			height: 32px;
+			width: 32px;
+		}
+	}
+	.blue-message {
+		background-color: #0079BE0D;
+		border-color: #0079BE4D;
+		&:before {
+			background-color: #0079BE;
+		}
+	}
+	.green-message {
+		background-color: #40B2390D;
+		border-color: #40B2394D;
+		&:before {
+			background-color: #40B239;
+		}
+	}
+	.orange-message {
+		background-color: #FF89000D;
+		border-color: #FF89004D;
+		&:before {
+			background-color: #FF8900;
+		}
+	}
+	.red-message {
+		background-color: #D500180D;
+		border-color: #D500184D;
+		&:before {
+			background-color: #D50018;
+		}
+	}
+}
+
+
+// Testimonials
+.content-center {
+	.advgb-testimonial-wrapper {
+		padding: 0 !important;
+		.advgb-testimonial {
+			margin: 45px -45px 45px 0;
+			.advgb-testimonial-item {
+				margin: 0;
+				padding: 0 45px 0 0;
+				.advgb-testimonial-avatar-group {
+					padding-bottom: 25px;
+					.advgb-testimonial-avatar {
+						align-items: center;
+						border: 0;
+						display: flex;
+						margin: 0;
+						img {
+							max-height: 100%;
+							max-width: unset !important;
+							width: 100%;
+						}
+					}
+				}
+				.advgb-testimonial-info {
+					.advgb-testimonial-name {
+						font-size: 1.125rem;
+						font-weight: 600;
+						margin: 0;
+						padding: 0 0 15px;
+					}
+					.advgb-testimonial-position {
+						font-size: 0.875rem;
+						font-weight: 600;
+						margin: 0;
+						padding-bottom: 15px;
+						text-transform: none;
+					}
+					.advgb-testimonial-desc {
+						font-size: 0.875rem;
+					}
+				}
+			}
+			&.advgb-avatar-left {
+				.advgb-testimonial-info {
+					text-align: left;
+				}
+				.advgb-testimonial-avatar-group {
+					padding-bottom: 0;
+					.advgb-testimonial-avatar {
+						align-items: flex-start;
+						padding-right: 25px;
+						padding-bottom: 0;
+					}
+				}
+			}
+			// Fonction SLIDER activé
+			&.slider-view {
+				.slick-list {
+					margin: 0 55px;
+					padding: 0 !important;
+				}
+			}
+		}
+		.advgb-slider-arrow {
+			border: 0;
+			margin: 0;
+			padding: 0;
+			width: 55px !important;
+			&.advgb-slider-prev {
+				left: 0;
+			}
+			&.advgb-slider-next {
+				right: 0;
+			}
+			&.slick-disabled {
+				display: none !important;
+			}
+			svg {
+				fill: $uqam-bg;
+			}
+		}
+	}
+}
+
+// POUR DIPLOMÉ
+/*
+.wp-block-advgb-testimonial {
+
+	.advgb-slider-arrow svg {
+		fill: #0079be;
+	}
+
+	.advgb-testimonial-item {
+		width: 270px;
+	}
+
+	.advgb-testimonial-info {
+		padding-left: 20px;
+	}
+
+	.advgb-testimonial-avatar-group {
+		height: 100px;
+		text-align: left;
+
+		.advgb-testimonial-avatar {
+			height: auto !important;
+			position: absolute;
+			top: 50%;
+			left: -60px;
+			-ms-transform: translateY(-50%);
+			transform: translateY(-50%);
+			margin: 0;
+		}
+	}
+	h4 {
+		margin-bottom: 0;
+		text-align: left;
+		padding-left: 0 !important;
+	}
+
+	h4 + p {
+		text-transform: none !important;
+		text-align: left;
+	}
+
+	h4 + p + p {
+		text-align: left;
+
+		& a::after {
+			content: ' >';
+			font-weight: bold;
+		}
+	}
+}
+*/

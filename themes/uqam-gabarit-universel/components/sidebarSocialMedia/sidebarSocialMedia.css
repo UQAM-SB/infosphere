@@ -1,0 +1,84 @@
+@charset "UTF-8";
+/**
+ * sidebarSocialMedia.scss
+ */
+/**
+ * _media-queries.scss
+ * MEDIA QUERIES
+ * Provient de: https://glennmccomb.com/articles/useful-sass-scss-media-query-mixins-for-bootstrap/
+ * Par Glenn McComb
+ *
+ * Fonctions à utiliser pour créer des Media Queries
+ */
+.icon {
+  fill: var(--col-left-icon-color);
+  width: 44px;
+  height: 44px;
+  vertical-align: middle;
+}
+.icon:hover {
+  opacity: 0.6;
+}
+
+.hide-on-fallback {
+  display: block;
+  position: absolute;
+  left: -100%;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+}
+
+@media (max-width: 991px) {
+  .widget_social_media_widget {
+    padding: 1rem 0 2rem;
+  }
+  .widget_social_media_widget .follow-us {
+    text-transform: uppercase;
+    color: var(--col-left-title-color);
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .widget_social_media_widget ul {
+    display: inline-block;
+    line-height: 2;
+  }
+  .widget_social_media_widget li {
+    color: var(--col-left-text-color);
+    margin: 5px 0;
+    padding-bottom: 0;
+    padding-right: 0.5rem;
+  }
+  .widget_social_media_widget li a {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .widget_social_media_widget li.follow-us:first-child {
+    padding-right: 1.25rem;
+  }
+}
+@media (min-width: 992px) {
+  .widget_social_media_widget {
+    border-top: 2px solid rgba(255, 255, 255, 0.15);
+    padding: 30px 0;
+  }
+  #wrapper-social-media {
+    margin: 0 15px;
+  }
+  .follow-us {
+    text-transform: uppercase;
+    color: var(--col-left-title-color);
+    font-weight: 300;
+    margin-bottom: 6px;
+  }
+  .icon {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 0.5rem;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .follow-us {
+    display: block;
+  }
+}/*# sourceMappingURL=sidebarSocialMedia.css.map */

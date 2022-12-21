@@ -1,0 +1,78 @@
+@charset "UTF-8";
+/**
+ * promoSidebar.scss
+ */
+/**
+ * _uqam-variables.scss
+ * Variable lié à l'UQAM
+ * Mixin pour aider à créer du CSS
+ */
+/**
+ * _media-queries.scss
+ * MEDIA QUERIES
+ * Provient de: https://glennmccomb.com/articles/useful-sass-scss-media-query-mixins-for-bootstrap/
+ * Par Glenn McComb
+ *
+ * Fonctions à utiliser pour créer des Media Queries
+ */
+.promo-sidebar h1, .promo-sidebar h2, .promo-sidebar h3, .promo-sidebar h4, .promo-sidebar h5, .promo-sidebar h6,
+.promo-sidebar .widget-title {
+  color: var(--col-left-title-color);
+}
+.promo-sidebar p, .promo-sidebar dl, .promo-sidebar dt, .promo-sidebar dd, .promo-sidebar li, .promo-sidebar th, .promo-sidebar td, .promo-sidebar pre, .promo-sidebar code,
+.promo-sidebar .textwidget {
+  color: var(--col-left-text-color);
+  margin-bottom: 1.25rem;
+}
+.promo-sidebar aside:last-child {
+  padding-bottom: 40px;
+}
+.promo-sidebar nav:not(:first-child):before,
+.promo-sidebar aside:before {
+  content: "";
+  display: block;
+  border-top: 2px solid var(--col-left-separators);
+  margin: 0 15px;
+  padding-top: 35px;
+}
+.promo-sidebar a {
+  color: var(--col-left-link-color);
+}
+.promo-sidebar a:link, .promo-sidebar a:visited {
+  color: var(--col-left-link-color);
+}
+.promo-sidebar a:hover, .promo-sidebar a:focus, .promo-sidebar a:active {
+  text-decoration: underline;
+}
+
+@media (max-width: 991px) {
+  #promo-footer {
+    background: var(--menu-bg-color);
+    text-align: center;
+  }
+  #promo-footer .promo-sidebar {
+    display: inline-block;
+    margin: 0 16px 16px;
+  }
+  #promo-footer .promo-sidebar img {
+    max-width: 100%;
+    height: auto;
+  }
+  #promo-footer .promo-sidebar:last-child {
+    margin-bottom: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  .promo-sidebar {
+    margin-bottom: 25px;
+  }
+  .promo-sidebar .promo {
+    max-width: 330px;
+    padding: 0;
+    text-align: center;
+  }
+  .promo-sidebar .promo img {
+    max-width: 100%;
+    height: auto;
+  }
+}/*# sourceMappingURL=sidebarPromo.css.map */

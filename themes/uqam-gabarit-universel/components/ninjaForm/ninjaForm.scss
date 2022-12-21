@@ -1,0 +1,119 @@
+/**
+ * ninjaForm.scss
+ * Ajustement du visuel des élément du plugin Ninja Form
+ */
+
+// Import
+@import "../../assets/styles/uqam-variables";
+@import "../../assets/styles/media-queries";
+
+
+form {
+	.nf-form-content {
+		padding: 0;
+	}
+
+	.nf-field-container {
+		margin-bottom: 35px;
+		.field-wrap {
+			.nf-field-label {
+				margin-top: 10px;
+				label {
+					color: var(--global-title-color);
+				}
+			}
+			.nf-field-element {
+
+				input:not([type=button]),
+				textarea,
+				select {
+					color: var(--global-text-color);
+					border: 1px solid $couleur-bordure;
+				}
+				input:not([type=button]),
+				textarea {
+					background-color: #FFF;
+				}
+				select {
+					cursor: pointer;
+					position: relative;
+				}
+				textarea {
+					padding: 25px;
+				}
+
+				&>div {
+					background-color: #FFF;
+					&:after {
+						color: $uqam-bg;
+						font-size: 0.75rem;
+					}
+				}
+				ul {
+					li {
+						&:before {
+							content: none;
+						}
+					}
+				}
+				@include respond-above(md) {
+					input:not([type=button]),
+					select,
+					&>div {
+						width: 50%;
+					}
+				}
+			}
+			&.submit-wrap {
+				text-align: right;
+				input[type=button] {
+					transition: unset;
+				}
+			}
+		}
+		.list-radio-wrap,
+		.list-checkbox-wrap {
+			.nf-field-element {
+				label {
+					cursor: pointer;
+					display: inline;
+					font-size: 1rem;
+					margin: 0 !important;
+					padding-left: 25px;
+					&:after {
+						border: 2px solid $uqam-bg;
+						height: 14px;
+						left: 0;
+						top: 2px;
+						width: 14px;
+					}
+				}
+			}
+		}
+		.list-radio-wrap {
+			.nf-field-element {
+				label {
+					&:before {
+						background: $uqam-bg;
+						height: 6px;
+						left: 4px;
+						top: 6px;
+						width: 6px;
+					}
+				}
+			}
+		}
+		.list-checkbox-wrap {
+			.nf-field-element {
+				label {
+					&:before {
+						color: $uqam-bg;
+						left: 3px;
+						top: -1px;
+						font-size: 0.563rem;
+					}
+				}
+			}
+		}
+	}
+}

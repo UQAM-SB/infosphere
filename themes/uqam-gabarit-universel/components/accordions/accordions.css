@@ -1,0 +1,202 @@
+@charset "UTF-8";
+/**
+ * accordions.scss
+ * Doit contenir le visuel de tous les types d'accordéon
+ */
+/**
+ * _uqam-variables.scss
+ * Variable lié à l'UQAM
+ * Mixin pour aider à créer du CSS
+ */
+#main-content .c-accordion__item {
+  margin-bottom: 10px;
+}
+#main-content .c-accordion__item.is-open .c-accordion__title {
+  color: var(--global-accordion-color-text, #FFF);
+  background-color: var(--global-accordion-color-alt, #333);
+}
+#main-content .c-accordion__item.is-open .c-accordion__title:after {
+  -webkit-mask: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/moins.svg") center right/13px no-repeat;
+          mask: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/moins.svg") center right/13px no-repeat;
+  background-color: var(--global-accordion-color-text, #FFF);
+}
+
+#main-content .c-accordion__title {
+  color: var(--global-accordion-color-alt, #333);
+  background-color: var(--global-accordion-color, #efefef);
+  font-weight: normal;
+  font-size: 1.125rem;
+  line-height: 1.8;
+  margin: 0 !important;
+  padding: 10px 40px 10px 15px;
+}
+#main-content .c-accordion__title:hover {
+  color: var(--global-accordion-color-text, #FFF);
+  background-color: var(--global-accordion-color-alt, #333);
+}
+#main-content .c-accordion__title:hover:after {
+  -webkit-mask: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/plus.svg") center right/13px no-repeat;
+          mask: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/plus.svg") center right/13px no-repeat;
+  background-color: var(--global-accordion-color-text, #FFF);
+}
+#main-content .c-accordion__title:after {
+  content: "";
+  -webkit-mask: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/plus.svg") center right/13px no-repeat;
+          mask: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/plus.svg") center right/13px no-repeat;
+  background-color: var(--global-accordion-color-alt, #333);
+  display: inline-block;
+  height: 100%;
+  right: 15px;
+  width: 15px;
+}
+#main-content .c-accordion__content {
+  border: 1px solid var(--global-accordion-color-alt, #333);
+  padding: 20px 40px;
+}
+#main-content .c-accordion__content > h2:first-child,
+#main-content .c-accordion__content > h3:first-child,
+#main-content .c-accordion__content > h4:first-child,
+#main-content .c-accordion__content > h5:first-child,
+#main-content .c-accordion__content > h6:first-child {
+  margin-top: 0;
+}
+#main-content .advgb-accordion-wrapper {
+  margin-bottom: 30px;
+}
+#main-content .advgb-accordion-item {
+  margin-bottom: 10px !important;
+}
+#main-content .advgb-accordion-header {
+  background-color: var(--global-accordion-color, #efefef) !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  cursor: pointer;
+  margin-top: 0;
+  padding: 10px 40px 10px 15px;
+}
+#main-content .advgb-accordion-header-icon,
+#main-content .advgb-accordion-header .ui-accordion-header-icon {
+  display: none;
+}
+#main-content .advgb-accordion-header h4 {
+  color: var(--global-accordion-color, #efefef) !important;
+  font-size: 1.125rem;
+  font-weight: normal;
+  position: relative;
+}
+#main-content .advgb-accordion-header h4:after {
+  -webkit-mask: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/plus.svg") center right/13px no-repeat;
+          mask: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/plus.svg") center right/13px no-repeat;
+  background-color: var(--global-accordion-color, #efefef);
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 15px;
+}
+#main-content .advgb-accordion-header:hover, #main-content .advgb-accordion-header.ui-accordion-header-active {
+  background-color: var(--global-accordion-color-alt, #333) !important;
+}
+#main-content .advgb-accordion-header:hover h4, #main-content .advgb-accordion-header.ui-accordion-header-active h4 {
+  color: var(--global-accordion-color-text, #FFF) !important;
+}
+#main-content .advgb-accordion-header:hover h4:after, #main-content .advgb-accordion-header.ui-accordion-header-active h4:after {
+  background-color: var(--global-accordion-color-text, #FFF);
+}
+#main-content .advgb-accordion-header.ui-accordion-header-active h4:after {
+  -webkit-mask: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/moins.svg") center right/13px no-repeat;
+          mask: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/moins.svg") center right/13px no-repeat;
+}
+#main-content .advgb-accordion-body {
+  border: 1px solid var(--global-accordion-color, #efefef);
+  padding: 20px 40px;
+}
+
+#accordion,
+.accordion {
+  margin-bottom: 25px;
+}
+#accordion .card,
+.accordion .card {
+  border: none;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  margin-bottom: 10px;
+}
+#accordion .card-header,
+.accordion .card-header {
+  border-bottom: none;
+  cursor: pointer;
+  padding: 0;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+}
+#accordion .card-header button,
+.accordion .card-header button {
+  background-color: var(--global-accordion-color, #efefef);
+  color: var(--global-accordion-color-alt, #333);
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.8;
+  width: 100%;
+  height: 100%;
+  padding: 10px 40px 10px 15px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  white-space: normal;
+}
+#accordion .card-header button[aria-expanded=true],
+.accordion .card-header button[aria-expanded=true] {
+  background-color: var(--global-accordion-color-alt, #333);
+  color: var(--global-accordion-color-text, #FFF);
+}
+#accordion .card-header button[aria-expanded=true]:after,
+.accordion .card-header button[aria-expanded=true]:after {
+  background-color: var(--global-accordion-color-text, #FFF);
+  -webkit-mask: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/moins.svg") center right/13px no-repeat;
+          mask: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/moins.svg") center right/13px no-repeat;
+}
+#accordion .card-header button:after,
+.accordion .card-header button:after {
+  content: "";
+  background-color: var(--global-accordion-color-alt, #333);
+  -webkit-mask: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/plus.svg") center right/13px no-repeat;
+          mask: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/plus.svg") center right/13px no-repeat;
+  padding: 10px;
+  right: 15px;
+  position: absolute;
+  height: 100%;
+  top: 0;
+}
+#accordion .card-header button:hover, #accordion .card-header button:focus,
+.accordion .card-header button:hover,
+.accordion .card-header button:focus {
+  background-color: var(--global-accordion-color-alt, #333);
+  color: var(--global-accordion-color-text, #FFF);
+  text-decoration: none;
+}
+#accordion .card-header button:hover:after, #accordion .card-header button:focus:after,
+.accordion .card-header button:hover:after,
+.accordion .card-header button:focus:after {
+  background-color: var(--global-accordion-color-text, #FFF);
+  -webkit-mask: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/plus.svg") center right/13px no-repeat;
+          mask: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/plus.svg") center right/13px no-repeat;
+}
+#accordion .card-header button:hover[aria-expanded=true]:after, #accordion .card-header button:focus[aria-expanded=true]:after,
+.accordion .card-header button:hover[aria-expanded=true]:after,
+.accordion .card-header button:focus[aria-expanded=true]:after {
+  background-color: var(--global-accordion-color-text, #FFF);
+  -webkit-mask: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/moins.svg") center right/13px no-repeat;
+          mask: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/moins.svg") center right/13px no-repeat;
+}
+#accordion .card-body,
+.accordion .card-body {
+  padding: 20px 40px;
+  border: solid var(--global-accordion-color-alt, #333) 1px;
+  border-top: none;
+}/*# sourceMappingURL=accordions.css.map */

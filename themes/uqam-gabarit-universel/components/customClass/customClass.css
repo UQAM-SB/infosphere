@@ -1,0 +1,74 @@
+@charset "UTF-8";
+/**
+ * customClass.scss
+ * Styliser les class custom
+ */
+/**
+ * _uqam-variables.scss
+ * Variable lié à l'UQAM
+ * Mixin pour aider à créer du CSS
+ */
+/**
+ * _media-queries.scss
+ * MEDIA QUERIES
+ * Provient de: https://glennmccomb.com/articles/useful-sass-scss-media-query-mixins-for-bootstrap/
+ * Par Glenn McComb
+ *
+ * Fonctions à utiliser pour créer des Media Queries
+ */
+.border-top-light {
+  border-top: 1px solid #ccc;
+}
+
+.border-top-large {
+  border-top: 2px solid #ccc;
+}
+
+@media (max-width: 991px) {
+  aside.border-bottom {
+    border-bottom: 3px double #dee2e6 !important;
+  }
+}
+.savoirPlus {
+  display: inline-block;
+  padding-right: 20px;
+  cursor: pointer;
+  background: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/png/fleche_bleu_uqam@2x.png") no-repeat right/7px;
+  background: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/fleche_bleu_uqam.svg") no-repeat right/7px;
+}
+.savoirPlus:hover {
+  text-decoration: underline;
+}
+
+.lien-ancre p {
+  height: 100%;
+}
+.lien-ancre a {
+  background-color: #FAFAFA;
+  border-top: 2px solid #FAFAFA;
+  color: #333;
+  height: 100%;
+  padding: 10px 15px 45px;
+  position: relative;
+}
+.lien-ancre a:after {
+  background: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/png/fleche_long_bleu_bas@2x.png") no-repeat center center/10px 10px;
+  background: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/fleche_long_bleu_bas.svg") no-repeat center center/10px 10px;
+  border: 2px solid #0079BE;
+  border-radius: 15px;
+  content: "";
+  display: block;
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+}
+.lien-ancre a:hover {
+  border-top: 2px solid #333;
+  text-decoration: none;
+}
+.lien-ancre a:hover:after {
+  background: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/png/fleche_long_blanc_bas@2x.png") no-repeat center center/10px 10px #0079BE;
+  background: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/fleche_long_blanc_bas.svg") no-repeat center center/10px 10px #0079BE;
+}/*# sourceMappingURL=customClass.css.map */

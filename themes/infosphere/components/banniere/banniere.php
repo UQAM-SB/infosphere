@@ -1,0 +1,5 @@
+<?php
+/**
+ * banniere.php
+ */
+

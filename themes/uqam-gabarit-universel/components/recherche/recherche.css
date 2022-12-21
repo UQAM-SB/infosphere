@@ -1,0 +1,182 @@
+@charset "UTF-8";
+/**
+ * recherche.scss
+ */
+/**
+ * _uqam-variables.scss
+ * Variable lié à l'UQAM
+ * Mixin pour aider à créer du CSS
+ */
+/**
+ * _media-queries.scss
+ * MEDIA QUERIES
+ * Provient de: https://glennmccomb.com/articles/useful-sass-scss-media-query-mixins-for-bootstrap/
+ * Par Glenn McComb
+ *
+ * Fonctions à utiliser pour créer des Media Queries
+ */
+.uqamRecherche-mobile {
+  position: relative;
+}
+
+.uqamRecherche__champ-mobile {
+  border: none;
+  border-radius: 3px;
+  padding: 10px 10px;
+}
+
+.uqamRecherche__envoie-mobile {
+  position: absolute;
+  top: 17px;
+  right: 4px;
+  background: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/png/loupe_bleu@2x.png") rgba(0, 0, 0, 0) no-repeat scroll center;
+  background: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/loupe_bleu.svg") rgba(0, 0, 0, 0) no-repeat scroll center;
+  background-size: 20px;
+  box-shadow: none;
+  border: 0;
+  height: 42px;
+  width: 30px;
+  padding: 0 10px;
+}
+
+.uqamRecherche__choix_conteneur .dropdown-item.active,
+.uqamRecherche__choix_conteneur .dropdown-item:active {
+  background-color: #cce4f2;
+  color: #004369;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .uqamRecherche {
+    height: 25px;
+  }
+}
+.uqamRecherche button {
+  cursor: pointer;
+}
+
+.uqamRecherche__champ {
+  border: 0;
+  max-width: 194px;
+  padding: 0 10px;
+  height: 25px;
+  font-size: 14px;
+  margin-left: 33px;
+  width: 87%;
+  border-top-left-radius: 5px;
+  -moz-border-top-left-radius: 5px;
+  -webkit-border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  -moz-border-bottom-left-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .uqamRecherche__champ {
+    margin-left: -2px;
+    max-width: 195px;
+    width: 77%;
+  }
+}
+
+.uqamRecherche_button {
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  display: inline-block;
+  padding: 0;
+  width: 25px;
+  height: 25px;
+  margin-left: -4px;
+  position: absolute;
+  right: 26px;
+}
+
+.uqamRecherche__choix {
+  background: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/png/fleche_blanc@2x.png") rgba(0, 0, 0, 0.4) no-repeat center;
+  background: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/fleche_blanc.svg") rgba(0, 0, 0, 0.4) no-repeat center;
+  background-size: 8px;
+  transform: rotate(90deg);
+  color: transparent;
+}
+.uqamRecherche__choix:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.uqamRecherche__envoie {
+  background: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/png/loupe_blanc@2x.png") rgba(0, 0, 0, 0.4) no-repeat center;
+  background: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/loupe_blanc.svg") rgba(0, 0, 0, 0.4) no-repeat center;
+  background-size: 15px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 0;
+}
+.uqamRecherche__envoie:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dropdown-menu-right {
+  border: none;
+  border-radius: 0 0 5px 5px;
+  padding: 0.25rem 0;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .dropdown-menu-right {
+    transform: translate3d(-2px, 20px, 0) !important;
+    max-width: 169px;
+    width: 169px;
+  }
+}
+@media (min-width: 1200px) {
+  .dropdown-menu-right {
+    transform: translate3d(33px, 20px, 0) !important;
+    max-width: 194px;
+    width: 194px;
+  }
+}
+.dropdown-menu-right button {
+  font-size: 0.85rem;
+  padding: 0.25rem 0.65rem;
+}
+
+.dropdown-toggle::after {
+  border: none;
+}
+.dropdown-toggle::after button {
+  width: 10%;
+}
+
+.content-center .cse .gsc-search-button-v2,
+.content-center .gsc-search-button-v2 {
+  padding: 8px 27px 9px;
+  margin-top: 0;
+  cursor: pointer;
+}
+.content-center .gsc-table-result,
+.content-center .gsc-url-top,
+.content-center .gsc-thumbnail-inside {
+  padding-left: 0;
+}
+.content-center .gsc-results .gsc-cursor-box .gsc-cursor-page {
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+.content-center .gsc-control-cse .gsc-input-box {
+  height: 35px;
+  padding: 0;
+  border-radius: 0;
+}
+.content-center .gsc-control-cse table {
+  margin: inherit;
+}
+.content-center .gsc-control-cse table tr {
+  border: none;
+}
+.content-center .gsc-control-cse table td {
+  padding: inherit;
+}
+.content-center .gsc-control-cse table .gsc-input-box td {
+  padding: 4px 6px;
+}/*# sourceMappingURL=recherche.css.map */

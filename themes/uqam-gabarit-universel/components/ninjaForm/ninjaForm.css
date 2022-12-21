@@ -1,0 +1,98 @@
+@charset "UTF-8";
+/**
+ * ninjaForm.scss
+ * Ajustement du visuel des élément du plugin Ninja Form
+ */
+/**
+ * _uqam-variables.scss
+ * Variable lié à l'UQAM
+ * Mixin pour aider à créer du CSS
+ */
+/**
+ * _media-queries.scss
+ * MEDIA QUERIES
+ * Provient de: https://glennmccomb.com/articles/useful-sass-scss-media-query-mixins-for-bootstrap/
+ * Par Glenn McComb
+ *
+ * Fonctions à utiliser pour créer des Media Queries
+ */
+form .nf-form-content {
+  padding: 0;
+}
+form .nf-field-container {
+  margin-bottom: 35px;
+}
+form .nf-field-container .field-wrap .nf-field-label {
+  margin-top: 10px;
+}
+form .nf-field-container .field-wrap .nf-field-label label {
+  color: var(--global-title-color);
+}
+form .nf-field-container .field-wrap .nf-field-element input:not([type=button]),
+form .nf-field-container .field-wrap .nf-field-element textarea,
+form .nf-field-container .field-wrap .nf-field-element select {
+  color: var(--global-text-color);
+  border: 1px solid #ccc;
+}
+form .nf-field-container .field-wrap .nf-field-element input:not([type=button]),
+form .nf-field-container .field-wrap .nf-field-element textarea {
+  background-color: #FFF;
+}
+form .nf-field-container .field-wrap .nf-field-element select {
+  cursor: pointer;
+  position: relative;
+}
+form .nf-field-container .field-wrap .nf-field-element textarea {
+  padding: 25px;
+}
+form .nf-field-container .field-wrap .nf-field-element > div {
+  background-color: #FFF;
+}
+form .nf-field-container .field-wrap .nf-field-element > div:after {
+  color: #0079be;
+  font-size: 0.75rem;
+}
+form .nf-field-container .field-wrap .nf-field-element ul li:before {
+  content: none;
+}
+@media (min-width: 768px) {
+  form .nf-field-container .field-wrap .nf-field-element input:not([type=button]),
+form .nf-field-container .field-wrap .nf-field-element select, form .nf-field-container .field-wrap .nf-field-element > div {
+    width: 50%;
+  }
+}
+form .nf-field-container .field-wrap.submit-wrap {
+  text-align: right;
+}
+form .nf-field-container .field-wrap.submit-wrap input[type=button] {
+  transition: unset;
+}
+form .nf-field-container .list-radio-wrap .nf-field-element label,
+form .nf-field-container .list-checkbox-wrap .nf-field-element label {
+  cursor: pointer;
+  display: inline;
+  font-size: 1rem;
+  margin: 0 !important;
+  padding-left: 25px;
+}
+form .nf-field-container .list-radio-wrap .nf-field-element label:after,
+form .nf-field-container .list-checkbox-wrap .nf-field-element label:after {
+  border: 2px solid #0079be;
+  height: 14px;
+  left: 0;
+  top: 2px;
+  width: 14px;
+}
+form .nf-field-container .list-radio-wrap .nf-field-element label:before {
+  background: #0079be;
+  height: 6px;
+  left: 4px;
+  top: 6px;
+  width: 6px;
+}
+form .nf-field-container .list-checkbox-wrap .nf-field-element label:before {
+  color: #0079be;
+  left: 3px;
+  top: -1px;
+  font-size: 0.563rem;
+}/*# sourceMappingURL=ninjaForm.css.map */

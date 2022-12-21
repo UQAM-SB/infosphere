@@ -1,0 +1,165 @@
+@charset "UTF-8";
+/**
+ * liensPlus.scss
+ * Bouton + qui apparait à côté du logo de l'UQAM dans le header
+ */
+/**
+ * _uqam-variables.scss
+ * Variable lié à l'UQAM
+ * Mixin pour aider à créer du CSS
+ */
+/**
+ * _media-queries.scss
+ * MEDIA QUERIES
+ * Provient de: https://glennmccomb.com/articles/useful-sass-scss-media-query-mixins-for-bootstrap/
+ * Par Glenn McComb
+ *
+ * Fonctions à utiliser pour créer des Media Queries
+ */
+.esg-faculte #quick-links {
+  display: none !important;
+}
+#quick-links button {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 26px;
+  right: 40px;
+  background: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/png/plus@2x.png") no-repeat center center rgba(0, 0, 0, 0.4);
+  background: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/plus.svg") no-repeat center center rgba(0, 0, 0, 0.4);
+  border: 0;
+  box-shadow: none;
+  cursor: pointer;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+#quick-links button:after {
+  display: none;
+}
+#quick-links button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+#quick-links.show button {
+  background: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/png/moins_blanc@2x.png") rgba(0, 0, 0, 0.4) no-repeat center center/12px;
+  background: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/moins_blanc.svg") rgba(0, 0, 0, 0.4) no-repeat center center/12px;
+}
+#quick-links.show button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+#quick-links .dropdown-menu.uqam {
+  background-color: #0079be;
+}
+#quick-links .dropdown-menu.esg-faculte {
+  background-color: #c0311a;
+}
+#quick-links .dropdown-menu.com-faculte {
+  background-color: #eeb111;
+}
+#quick-links .dropdown-menu.pol-faculte {
+  background-color: #5091cd;
+}
+#quick-links .dropdown-menu.art-faculte {
+  background-color: #7b7d72;
+}
+#quick-links .dropdown-menu.sci-faculte {
+  background-color: #40b239;
+}
+#quick-links .dropdown-menu.edu-faculte {
+  background-color: #f57b20;
+}
+#quick-links .dropdown-menu.fsh-faculte {
+  background-color: #af006e;
+}
+#quick-links .dropdown-menu.vie-faculte {
+  background-color: #00ade6;
+}
+#quick-links .dropdown-menu {
+  border: 3px solid #fff;
+  padding: 0px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  margin-top: 30px;
+  margin-left: -134px;
+  width: 294px;
+}
+#quick-links .dropdown-menu .background {
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 0px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  padding: 55px 40px;
+}
+#quick-links .dropdown-menu .background:before {
+  border-color: #fff transparent;
+  border-style: solid;
+  border-width: 0 25px 25px;
+  content: "";
+  display: block;
+  margin: 0 -25px 0 0;
+  position: absolute;
+  right: 50%;
+  top: -25px;
+}
+#quick-links .dropdown-menu .background:after {
+  border-style: solid;
+  border-width: 0px 20px 20px;
+  content: "";
+  display: block;
+  margin: 1px -20px 0 0;
+  position: absolute;
+  right: 50%;
+  top: -20px;
+  border-right-color: transparent;
+  border-left-color: transparent;
+}
+#quick-links .dropdown-menu .background.uqam:after {
+  border-top-color: #004972;
+  border-bottom-color: #004972;
+}
+#quick-links .dropdown-menu .background.esg-faculte:after {
+  border-top-color: #731d10;
+  border-bottom-color: #731d10;
+}
+#quick-links .dropdown-menu .background.com-faculte:after {
+  border-top-color: #8a6b1b;
+  border-bottom-color: #8a6b1b;
+}
+#quick-links .dropdown-menu .background.pol-faculte:after {
+  border-top-color: #30577b;
+  border-bottom-color: #30577b;
+}
+#quick-links .dropdown-menu .background.art-faculte:after {
+  border-top-color: #4a4b44;
+  border-bottom-color: #4a4b44;
+}
+#quick-links .dropdown-menu .background.sci-faculte:after {
+  border-top-color: #266b22;
+  border-bottom-color: #266b22;
+}
+#quick-links .dropdown-menu .background.edu-faculte:after {
+  border-top-color: #934a13;
+  border-bottom-color: #934a13;
+}
+#quick-links .dropdown-menu .background.fsh-faculte:after {
+  border-top-color: #6a134a;
+  border-bottom-color: #6a134a;
+}
+#quick-links .dropdown-menu .background.vie-faculte:after {
+  border-top-color: #00688a;
+  border-bottom-color: #00688a;
+}
+#quick-links .dropdown-menu .background a {
+  padding: 7px 0px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+#quick-links .dropdown-menu .background a:hover {
+  text-decoration: underline;
+  background: none;
+}/*# sourceMappingURL=liensPlus.css.map */

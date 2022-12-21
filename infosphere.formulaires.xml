@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<channel>
+	<title>Infosphère</title>
+	<pubDate>Mon, 12 Dec 2022 21:12:55 +0000</pubDate>
+
+	<form>
+		<id>2</id>
+		<form_key><![CDATA[cernersonsujet]]></form_key>
+		<name><![CDATA[Cerner son sujet]]></name>
+		<description><![CDATA[Le formulaire ci-dessous peut-être utilisé pour consigner les caractéristiques de la documentation potentiellement utile à la réalisation d’un travail académique.]]></description>
+		<created_at>2022-11-25 10:03:16</created_at>
+		<logged_in>0</logged_in>
+		<is_template>0</is_template>
+		<editable>0</editable>
+		<options><![CDATA[{"success_action":"redirect","success_url":"https:\/\/infosphere.dev.uqam.ca\/preparer-sa-recherche\/cerner-son-sujet\/","success_page_id":"31727","show_form":"1","no_save":"1","antispam":"1","success_msg":"Vos r\u00e9ponses ont \u00e9t\u00e9 envoy\u00e9es \u00e0 votre adresse courriel. Merci!","logged_in_role":[""],"cookie_expiration":"8000","editable_role":[""],"edit_page_id":"0","protect_files":"0","noindex_files":"0","open_date":"2022-05-17 15:05","custom_style":"1","submit_value":"Envoyer par courriel","submit_conditions":{"show_hide":"show","any_all":"all"},"before_html":"<legend class=\\\"frm_screen_reader\\\">[form_name]<\/legend>\r\n[if form_name]<h3 class=\\\"frm_form_title\\\">[form_name]<\/h3>[\/if form_name]\r\n[if form_description]<div class=\\\"frm_description\\\">[form_description]<\/div>[\/if form_description]","submit_html":"<div class=\\\"frm_submit\\\">\r\n[if back_button]<button type=\\\"submit\\\" name=\\\"frm_prev_page\\\" formnovalidate=\\\"formnovalidate\\\" class=\\\"frm_prev_page\\\" [back_hook]>[back_label]<\/button>[\/if back_button]\r\n<button class=\\\"frm_button_submit\\\" type=\\\"submit\\\"  [button_action]>[button_label]<\/button>\r\n[if save_draft]<a href=\\\"#\\\" tabindex=\\\"0\\\" class=\\\"frm_save_draft\\\" [draft_hook]>[draft_label]<\/a>[\/if save_draft]\r\n<\/div>"}]]></options>
+		<status><![CDATA[published]]></status>
+		<parent_form_id>0</parent_form_id>
+		<field>
+			<id>6</id>
+			<field_key><![CDATA[s30kr]]></field_key>
+			<name><![CDATA[Thème général du travail]]></name>
+			<description><![CDATA[]]></description>
+			<type><![CDATA[textarea]]></type>
+			<default_value><![CDATA[]]></default_value>
+			<field_order>2</field_order>
+			<form_id>2</form_id>
+			<required>0</required>
+			<options><![CDATA[]]></options>
+			<field_options><![CDATA[{"blank":"","custom_html":"<div id=\\\"frm_field_[id]_container\\\" class=\\\"frm_form_field form-field [required_class][error_class]\\\">\r\n    <label for=\\\"field_[key]\\\" id=\\\"field_[key]_label\\\" class=\\\"frm_primary_label\\\">[field_name]\r\n        <span class=\\\"frm_required\\\" aria-hidden=\\\"true\\\">[required_label]<\/span>\r\n    <\/label>\r\n    [input]\r\n    [if description]<div class=\\\"frm_description\\\" id=\\\"frm_desc_field_[key]\\\">[description]<\/div>[\/if description]\r\n    [if error]<div class=\\\"frm_error\\\" role=\\\"alert\\\" id=\\\"frm_error_field_[key]\\\">[error]<\/div>[\/if error]\r\n<\/div>","placeholder":"ex. : Le travail des jeunes"}]]></field_options>
+		</field>
+		<field>
+			<id>7</id>
+			<field_key><![CDATA[uwsb8]]></field_key>
+			<name><![CDATA[Quoi?]]></name>
+			<description><![CDATA[Quels sont les aspects qui m'intéressent? Quelles sont les composantes de la question?]]></description>
+			<type><![CDATA[textarea]]></type>
+			<default_value><![CDATA[]]></default_value>
+			<field_order>4</field_order>
+			<form_id>2</form_id>
+			<required>0</required>
+			<options><![CDATA[]]></options>
+			<field_options><![CDATA[{"blank":"","custom_html":"<div id=\\\"frm_field_[id]_container\\\" class=\\\"frm_form_field form-field [required_class][error_class]\\\">\r\n    <label for=\\\"field_[key]\\\" id=\\\"field_[key]_label\\\" class=\\\"frm_primary_label\\\">[field_name]\r\n        <span class=\\\"frm_required\\\" aria-hidden=\\\"true\\\">[required_label]<\/span>\r\n    <\/label>\r\n    [input]\r\n    [if description]<div class=\\\"frm_description\\\" id=\\\"frm_desc_field_[key]\\\">[description]<\/div>[\/if description]\r\n    [if error]<div class=\\\"frm_error\\\" role=\\\"alert\\\" id=\\\"frm_error_field_[key]\\\">[error]<\/div>[\/if error]\r\n<\/div>","placeholder":"ex. :  Les conditions de travail : pr\u00e9carit\u00e9, salaire, etc. L\u2019emploi : ch\u00f4mage, formation, politique de l\u2019emploi, etc."}]]></field_options>
+		</field>
+		<field>
+			<id>8</id>
+			<field_key><![CDATA[iapr5]]></field_key>
+			<name><![CDATA[Qui?]]></name>
+			<description><![CDATA[Quels groupes particuliers sont concernés par la question?]]></description>
+			<type><![CDATA[textarea]]></type>
+			<default_value><![CDATA[]]></default_value>
+			<field_order>6</field_order>
+			<form_id>2</form_id>
+			<required>0</required>
+			<options><![CDATA[]]></options>
+			<field_options><![CDATA[{"blank":"","placeholder":"ex. : Les jeunes sous-scolaris\u00e9s, les \u00e9l\u00e8ves du secondaire, les \u00e9tudiants postsecondaires, les jeunes dipl\u00f4m\u00e9s, etc.","in_section":"0","admin_only":[""]}]]></field_options>
+		</field>
+		<field>
+			<id>9</id>
+			<field_key><![CDATA[uz71z]]></field_key>
+			<name><![CDATA[Quand?]]></name>
+			<description><![CDATA[De quelle période s'agit-il? Est-ce une époque précise? Peut-on le circonscrire dans le temps?]]></description>
+			<type><![CDATA[textarea]]></type>
+			<default_value><![CDATA[]]></default_value>
+			<field_order>8</field_order>
+			<form_id>2</form_id>
+			<required>0</required>
+			<options><![CDATA[]]></options>
+			<field_options><![CDATA[{"blank":"","placeholder":"ex. : Question d'actualit\u00e9, donc int\u00e9r\u00eat pour des donn\u00e9es et des situations r\u00e9centes (5 derni\u00e8res ann\u00e9es)","in_section":"0","admin_only":[""]}]]></field_options>
+		</field>
+		<field>
+			<id>10</id>
+			<field_key><![CDATA[9jp8b]]></field_key>
+			<name><![CDATA[Où?]]></name>
+			<description><![CDATA[Quel est le contexte géographique? Peut-on limiter à une région particulière? Pays?]]></description>
+			<type><![CDATA[textarea]]></type>
+			<default_value><![CDATA[]]></default_value>
+			<field_order>10</field_order>
+			<form_id>2</form_id>
+			<required>0</required>
+			<options><![CDATA[]]></options>
+			<field_options><![CDATA[{"blank":"","placeholder":"ex. : Situation au Qu\u00e9bec mais on pourra pr\u00e9senter ou comparer cette situation avec celle d'autres pays.","in_section":"0","admin_only":[""]}]]></field_options>
+		</field>
+		<field>
+			<id>11</id>
+			<field_key><![CDATA[es4i9]]></field_key>
+			<name><![CDATA[Comment?]]></name>
+			<description><![CDATA[Quelles approches ou points de vue faut-il considérer? Historique? Sociologique? Économique? Statistique? Légal? Scientifique? Éthique?]]></description>
+			<type><![CDATA[textarea]]></type>
+			<default_value><![CDATA[]]></default_value>
+			<field_order>12</field_order>
+			<form_id>2</form_id>
+			<required>0</required>
+			<options><![CDATA[]]></options>
+			<field_options><![CDATA[{"blank":"","placeholder":"ex. : Sociologique et \u00e9conomique","in_section":"0","admin_only":[""]}]]></field_options>
+		</field>
+		<field>
+			<id>12</id>
+			<field_key><![CDATA[xsyrd]]></field_key>
+			<name><![CDATA[Pourquoi?]]></name>
+			<description><![CDATA[Quelle est la signification ou l'importance du sujet? Quelles en sont les implications? Pourquoi devrait-on s'en préoccuper?]]></description>
+			<type><![CDATA[textarea]]></type>
+			<default_value><![CDATA[]]></default_value>
+			<field_order>14</field_order>
+			<form_id>2</form_id>
+			<required>0</required>
+			<options><![CDATA[]]></options>
+			<field_options><![CDATA[{"blank":"","placeholder":"ex. : Le contexte socio\u00e9conomique actuel influence les moyens d\u2019int\u00e9gration des jeunes vers l\u2019emploi.","in_section":"0","admin_only":[""]}]]></field_options>
+		</field>
+		<field>
+			<id>13</id>
+			<field_key><![CDATA[dymqn]]></field_key>
+			<name><![CDATA[Quelles sont les questions auxquelles j’aimerais répondre?]]></name>
+			<description><![CDATA[]]></description>
+			<type><![CDATA[textarea]]></type>
+			<default_value><![CDATA[]]></default_value>
+			<field_order>16</field_order>
+			<form_id>2</form_id>
+			<required>0</required>
+			<options><![CDATA[]]></options>
+			<field_options><![CDATA[{"blank":"","placeholder":"ex. : Quelles sont les conditions d'int\u00e9gration des jeunes dipl\u00f4m\u00e9s au monde du travail?","in_section":"0","admin_only":[""]}]]></field_options>
+		</field>
+		<field>
+			<id>14</id>
+			<field_key><![CDATA[9ee6u]]></field_key>
+			<name><![CDATA[Votre courriel]]></name>
+			<description><![CDATA[]]></description>
+			<type><![CDATA[email]]></type>
+			<default_value><![CDATA[]]></default_value>
+			<field_order>18</field_order>
+			<form_id>2</form_id>
+			<required>1</required>
+			<options><![CDATA[]]></options>
+			<field_options><![CDATA[{"invalid":"Courriel is invalid","in_section":"0","admin_only":[""]}]]></field_options>
+		</field>
+		<field>
+			<id>28</id>
+			<field_key><![CDATA[ldexj]]></field_key>
+			<name><![CDATA[HTML]]></name>
+			<description><![CDATA[<p class="f-icon info">Aucune donnée que vous soumettez via ce formulaire n'est conservée sur nos serveurs.</p>]]></description>
+			<type><![CDATA[html]]></type>
+			<default_value><![CDATA[]]></default_value>
+			<field_order>20</field_order>
+			<form_id>2</form_id>
+			<required>0</required>
+			<options><![CDATA[]]></options>
+			<field_options><![CDATA[{"admin_only":[""],"in_section":"0","blank":""}]]></field_options>
+		</field>
+	</form>
+	<form>
+		<id>3</id>
+		<form_key><![CDATA[caractristiquesdeladocumentationutiliser]]></form_key>
+		<name><![CDATA[Caractéristiques de la documentation à utiliser]]></name>
+		<description><![CDATA[]]></description>
+		<created_at>2022-04-07 16:11:45</created_at>
+		<logged_in>0</logged_in>
+		<is_template>0</is_template>
+		<editable>0</editable>
+		<options><![CDATA[{"success_action":"redirect","success_url":"https:\/\/infosphere.dev.uqam.ca\/preparer-sa-recherche\/distinguer-les-types-de-documents\/caracteristiques-de-la-documentation-a-utiliser\/","success_page_id":"32095","no_save":"1","antispam":"1","logged_in_role":[""],"cookie_expiration":"8000","editable_role":[""],"edit_page_id":"","protect_files":"0","noindex_files":"0","open_date":"2022-05-17 15:05","custom_style":"1","submit_conditions":{"show_hide":"show","any_all":"all"},"before_html":"<legend class=\\\"frm_screen_reader\\\">[form_name]<\/legend>\r\n[if form_name]<h3 class=\\\"frm_form_title\\\">[form_name]<\/h3>[\/if form_name]\r\n[if form_description]<div class=\\\"frm_description\\\">[form_description]<\/div>[\/if form_description]","submit_html":"<div class=\\\"frm_submit\\\">\r\n[if back_button]<button type=\\\"submit\\\" name=\\\"frm_prev_page\\\" formnovalidate=\\\"formnovalidate\\\" class=\\\"frm_prev_page\\\" [back_hook]>[back_label]<\/button>[\/if back_button]\r\n<button class=\\\"frm_button_submit\\\" type=\\\"submit\\\"  [button_action]>[button_label]<\/button>\r\n[if save_draft]<a href=\\\"#\\\" tabindex=\\\"0\\\" class=\\\"frm_save_draft\\\" [draft_hook]>[draft_label]<\/a>[\/if save_draft]\r\n<\/div>"}]]></options>
+		<status><![CDATA[published]]></status>
+		<parent_form_id>0</parent_form_id>
+		<field>
+			<id>24</id>
+			<field_key><![CDATA[m277d]]></field_key>
+			<name><![CDATA[De : ]]></name>
+			<description><![CDATA[]]></description>
+			<type><![CDATA[text]]></type>
+			<default_value><![CDATA[[date]]]></default_value>
+			<field_order>2</field_order>
+			<form_id>3</form_id>
+			<required>0</required>
+			<options><![CDATA[]]></options>
+			<field_options><![CDATA[{"admin_only":[""],"in_section":"0","blank":"","invalid":"Text is invalid","classes":"frm6 frm_first","custom_html":"<div id=\\\"frm_field_[id]_container\\\" class=\\\"frm_form_field form-field [required_class][error_class]\\\">\r\n    <label for=\\\"field_[key]\\\" id=\\\"field_[key]_label\\\" class=\\\"frm_primary_label\\\">[field_name]\r\n        <span class=\\\"frm_required\\\" aria-hidden=\\\"true\\\">[required_label]<\/span>\r\n    <\/label>\r\n    [input]\r\n    [if description]<div class=\\\"frm_description\\\" id=\\\"frm_desc_field_[key]\\\">[description]<\/div>[\/if description]\r\n    [if error]<div class=\\\"frm_error\\\" role=\\\"alert\\\" id=\\\"frm_error_field_[key]\\\">[error]<\/div>[\/if error]\r\n<\/div>"}]]></field_options>
+		</field>
+		<field>
+			<id>25</id>
+			<field_key><![CDATA[pqh9j]]></field_key>
+			<name><![CDATA[À : ]]></name>
+			<description><![CDATA[]]></description>
+			<type><![CDATA[text]]></type>
+			<default_value><![CDATA[[date]]]></default_value>
+			<field_order>3</field_order>
+			<form_id>3</form_id>
+			<required>0</required>
+			<options><![CDATA[]]></options>
+			<field_options><![CDATA[{"admin_only":[""],"in_section":"0","blank":"","invalid":"Text is invalid","classes":"frm6","custom_html":"<div id=\\\"frm_field_[id]_container\\\" class=\\\"frm_form_field form-field [required_class][error_class]\\\">\r\n    <label for=\\\"field_[key]\\\" id=\\\"field_[key]_label\\\" class=\\\"frm_primary_label\\\">[field_name]\r\n        <span class=\\\"frm_required\\\" aria-hidden=\\\"true\\\">[required_label]<\/span>\r\n    <\/label>\r\n    [input]\r\n    [if description]<div class=\\\"frm_description\\\" id=\\\"frm_desc_field_[key]\\\">[description]<\/div>[\/if description]\r\n    [if error]<div class=\\\"frm_error\\\" role=\\\"alert\\\" id=\\\"frm_error_field_[key]\\\">[error]<\/div>[\/if error]\r\n<\/div>"}]]></field_options>
+		</field>
+		<field>
+			<id>17</id>
+			<field_key><![CDATA[i7lip]]></field_key>
+			<name><![CDATA[Lieux]]></name>
+			<description><![CDATA[]]></description>
+			<type><![CDATA[text]]></type>
+			<default_value><![CDATA[]]></default_value>
+			<field_order>5</field_order>
+			<form_id>3</form_id>
+			<required>0</required>
+			<options><![CDATA[]]></options>
+			<field_options><![CDATA[{"blank":"","invalid":"Text is invalid","classes":"frm12 frm_first","custom_html":"<div id=\\\"frm_field_[id]_container\\\" class=\\\"frm_form_field form-field [required_class][error_class]\\\">\r\n    <label for=\\\"field_[key]\\\" id=\\\"field_[key]_label\\\" class=\\\"frm_primary_label\\\">[field_name]\r\n        <span class=\\\"frm_required\\\" aria-hidden=\\\"true\\\">[required_label]<\/span>\r\n    <\/label>\r\n    [input]\r\n    [if description]<div class=\\\"frm_description\\\" id=\\\"frm_desc_field_[key]\\\">[description]<\/div>[\/if description]\r\n    [if error]<div class=\\\"frm_error\\\" role=\\\"alert\\\" id=\\\"frm_error_field_[key]\\\">[error]<\/div>[\/if error]\r\n<\/div>","placeholder":"Ex. : Qu\u00e9bec, \u00c9tats-Unis, Chili","in_section":"0","admin_only":[""]}]]></field_options>
+		</field>
+		<field>
+			<id>16</id>
+			<field_key><![CDATA[hqoyu]]></field_key>
+			<name><![CDATA[Langue]]></name>
+			<description><![CDATA[]]></description>
+			<type><![CDATA[text]]></type>
+			<default_value><![CDATA[]]></default_value>
+			<field_order>7</field_order>
+			<form_id>3</form_id>
+			<required>0</required>
+			<options><![CDATA[]]></options>
+			<field_options><![CDATA[{"blank":"","invalid":"Text is invalid","custom_html":"<div id=\\\"frm_field_[id]_container\\\" class=\\\"frm_form_field form-field [required_class][error_class]\\\">\r\n    <label for=\\\"field_[key]\\\" id=\\\"field_[key]_label\\\" class=\\\"frm_primary_label\\\">[field_name]\r\n        <span class=\\\"frm_required\\\" aria-hidden=\\\"true\\\">[required_label]<\/span>\r\n    <\/label>\r\n    [input]\r\n    [if description]<div class=\\\"frm_description\\\" id=\\\"frm_desc_field_[key]\\\">[description]<\/div>[\/if description]\r\n    [if error]<div class=\\\"frm_error\\\" role=\\\"alert\\\" id=\\\"frm_error_field_[key]\\\">[error]<\/div>[\/if error]\r\n<\/div>","placeholder":"Ex. : fran\u00e7ais, anglais, espagnol","in_section":"0","admin_only":[""]}]]></field_options>
+		</field>
+		<field>
+			<id>26</id>
+			<field_key><![CDATA[epqb9]]></field_key>
+			<name><![CDATA[Domaine]]></name>
+			<description><![CDATA[]]></description>
+			<type><![CDATA[text]]></type>
+			<default_value><![CDATA[]]></default_value>
+			<field_order>9</field_order>
+			<form_id>3</form_id>
+			<required>0</required>
+			<options><![CDATA[]]></options>
+			<field_options><![CDATA[{"admin_only":[""],"in_section":"0","blank":"","invalid":"Text is invalid","custom_html":"<div id=\\\"frm_field_[id]_container\\\" class=\\\"frm_form_field form-field [required_class][error_class]\\\">\r\n    <label for=\\\"field_[key]\\\" id=\\\"field_[key]_label\\\" class=\\\"frm_primary_label\\\">[field_name]\r\n        <span class=\\\"frm_required\\\" aria-hidden=\\\"true\\\">[required_label]<\/span>\r\n    <\/label>\r\n    [input]\r\n    [if description]<div class=\\\"frm_description\\\" id=\\\"frm_desc_field_[key]\\\">[description]<\/div>[\/if description]\r\n    [if error]<div class=\\\"frm_error\\\" role=\\\"alert\\\" id=\\\"frm_error_field_[key]\\\">[error]<\/div>[\/if error]\r\n<\/div>","placeholder":"Ex. : philosophie, biologie, communication"}]]></field_options>
+		</field>
+		<field>
+			<id>18</id>
+			<field_key><![CDATA[jwn5t]]></field_key>
+			<name><![CDATA[Type d'information]]></name>
+			<description><![CDATA[]]></description>
+			<type><![CDATA[checkbox]]></type>
+			<default_value><![CDATA[]]></default_value>
+			<field_order>11</field_order>
+			<form_id>3</form_id>
+			<required>0</required>
+			<options><![CDATA[[{"label":"Actualit\u00e9","value":"Actualit\u00e9","image":"0"},{"label":"Historique","value":"Historique","image":"0"},{"label":"Th\u00e9orique","value":"Th\u00e9orique","image":"0"},{"label":"Statistique","value":"Statistique","image":"0"},{"label":"Scientifique","value":"Scientifique","image":"0"},{"label":"Technique","value":"Technique","image":"0"},{"label":"Vulgarisation","value":"Vulgarisation","image":"0"}]]]></options>
+			<field_options><![CDATA[{"blank":"","image_options":"0","image_size":"small","in_section":"0","admin_only":[""],"other":"0"}]]></field_options>
+		</field>
+		<field>
+			<id>19</id>
+			<field_key><![CDATA[h9uy6]]></field_key>
+			<name><![CDATA[Type de documents]]></name>
+			<description><![CDATA[]]></description>
+			<type><![CDATA[checkbox]]></type>
+			<default_value><![CDATA[]]></default_value>
+			<field_order>13</field_order>
+			<form_id>3</form_id>
+			<required>0</required>
+			<options><![CDATA[[{"label":"Actes de colloque \/ Proceedings","value":"Actes de colloque \/ Proceedings","image":"0"},{"label":"Archives","value":"Archives","image":"0"},{"label":"Articles de journaux","value":"Articles de journaux","image":"0"},{"label":"Articles de revues","value":"Articles de revues","image":"0"},{"label":"Brevets","value":"Brevets","image":"0"},{"label":"Documentaires \/ films","value":"Documentaires \/ films","image":"0"},{"label":"Donn\u00e9es","value":"Donn\u00e9es","image":"0"},{"label":"Dictionnaires \/ Encyclop\u00e9dies","value":"Dictionnaires \/ Encyclop\u00e9dies","image":"0"},{"label":"Cartes","value":"Cartes","image":"0"},{"label":"Images \/ photos","value":"Images \/ photos","image":"0"},{"label":"Livres \/ Manuels (Handbooks)","value":"Livres \/ Manuels (Handbooks)","image":"0"},{"label":"Lois et r\u00e8glements","value":"Lois et r\u00e8glements","image":"0"},{"label":"Normes","value":"Normes","image":"0"},{"label":"Pr\u00e9publications","value":"Pr\u00e9publications","image":"0"},{"label":"Publication gouvernementale","value":"Publication gouvernementale","image":"0"},{"label":"Rapports","value":"Rapports","image":"0"},{"label":"Statistique","value":"Statistique","image":"0"},{"label":"Tests","value":"Tests","image":"0"},{"label":"Th\u00e8ses \/ m\u00e9moires","value":"Th\u00e8ses \/ m\u00e9moires","image":"0"},{"label":"Autres","value":"Autres","image":"0"}]]]></options>
+			<field_options><![CDATA[{"blank":"","custom_html":"<div id=\\\"frm_field_[id]_container\\\" class=\\\"frm_form_field form-field [required_class][error_class]\\\">\r\n    <div  id=\\\"field_[key]_label\\\" class=\\\"frm_primary_label\\\">[field_name]\r\n        <span class=\\\"frm_required\\\" aria-hidden=\\\"true\\\">[required_label]<\/span>\r\n    <\/div>\r\n    <div class=\\\"frm_opt_container\\\" aria-labelledby=\\\"field_[key]_label\\\" role=\\\"group\\\">[input]<\/div>\r\n    [if description]<div class=\\\"frm_description\\\" id=\\\"frm_desc_field_[key]\\\">[description]<\/div>[\/if description]\r\n    [if error]<div class=\\\"frm_error\\\" role=\\\"alert\\\" id=\\\"frm_error_field_[key]\\\">[error]<\/div>[\/if error]\r\n<\/div>","image_options":"0","image_size":"small","in_section":"0","admin_only":[""],"other":"0"}]]></field_options>
+		</field>
+		<field>
+			<id>21</id>
+			<field_key><![CDATA[fq8ac]]></field_key>
+			<name><![CDATA[Titres déjà connus]]></name>
+			<description><![CDATA[]]></description>
+			<type><![CDATA[text]]></type>
+			<default_value><![CDATA[]]></default_value>
+			<field_order>15</field_order>
+			<form_id>3</form_id>
+			<required>0</required>
+			<options><![CDATA[]]></options>
+			<field_options><![CDATA[{"blank":"","invalid":"Text is invalid","custom_html":"<div id=\\\"frm_field_[id]_container\\\" class=\\\"frm_form_field form-field [required_class][error_class]\\\">\r\n    <label for=\\\"field_[key]\\\" id=\\\"field_[key]_label\\\" class=\\\"frm_primary_label\\\">[field_name]\r\n        <span class=\\\"frm_required\\\" aria-hidden=\\\"true\\\">[required_label]<\/span>\r\n    <\/label>\r\n    [input]\r\n    [if description]<div class=\\\"frm_description\\\" id=\\\"frm_desc_field_[key]\\\">[description]<\/div>[\/if description]\r\n    [if error]<div class=\\\"frm_error\\\" role=\\\"alert\\\" id=\\\"frm_error_field_[key]\\\">[error]<\/div>[\/if error]\r\n<\/div>","in_section":"0","admin_only":[""]}]]></field_options>
+		</field>
+		<field>
+			<id>22</id>
+			<field_key><![CDATA[dx0wz]]></field_key>
+			<name><![CDATA[Sites Web]]></name>
+			<description><![CDATA[]]></description>
+			<type><![CDATA[text]]></type>
+			<default_value><![CDATA[]]></default_value>
+			<field_order>17</field_order>
+			<form_id>3</form_id>
+			<required>0</required>
+			<options><![CDATA[]]></options>
+			<field_options><![CDATA[{"blank":"","invalid":"Text is invalid","custom_html":"<div id=\\\"frm_field_[id]_container\\\" class=\\\"frm_form_field form-field [required_class][error_class]\\\">\r\n    <label for=\\\"field_[key]\\\" id=\\\"field_[key]_label\\\" class=\\\"frm_primary_label\\\">[field_name]\r\n        <span class=\\\"frm_required\\\" aria-hidden=\\\"true\\\">[required_label]<\/span>\r\n    <\/label>\r\n    [input]\r\n    [if description]<div class=\\\"frm_description\\\" id=\\\"frm_desc_field_[key]\\\">[description]<\/div>[\/if description]\r\n    [if error]<div class=\\\"frm_error\\\" role=\\\"alert\\\" id=\\\"frm_error_field_[key]\\\">[error]<\/div>[\/if error]\r\n<\/div>","in_section":"0","admin_only":[""]}]]></field_options>
+		</field>
+		<field>
+			<id>23</id>
+			<field_key><![CDATA[zj2lz]]></field_key>
+			<name><![CDATA[Outils de recherche]]></name>
+			<description><![CDATA[]]></description>
+			<type><![CDATA[text]]></type>
+			<default_value><![CDATA[]]></default_value>
+			<field_order>19</field_order>
+			<form_id>3</form_id>
+			<required>0</required>
+			<options><![CDATA[]]></options>
+			<field_options><![CDATA[{"blank":"","invalid":"Text is invalid","custom_html":"<div id=\\\"frm_field_[id]_container\\\" class=\\\"frm_form_field form-field [required_class][error_class]\\\">\r\n    <label for=\\\"field_[key]\\\" id=\\\"field_[key]_label\\\" class=\\\"frm_primary_label\\\">[field_name]\r\n        <span class=\\\"frm_required\\\" aria-hidden=\\\"true\\\">[required_label]<\/span>\r\n    <\/label>\r\n    [input]\r\n    [if description]<div class=\\\"frm_description\\\" id=\\\"frm_desc_field_[key]\\\">[description]<\/div>[\/if description]\r\n    [if error]<div class=\\\"frm_error\\\" role=\\\"alert\\\" id=\\\"frm_error_field_[key]\\\">[error]<\/div>[\/if error]\r\n<\/div>","in_section":"0","admin_only":[""]}]]></field_options>
+		</field>
+		<field>
+			<id>27</id>
+			<field_key><![CDATA[cd40p]]></field_key>
+			<name><![CDATA[Votre courriel]]></name>
+			<description><![CDATA[]]></description>
+			<type><![CDATA[email]]></type>
+			<default_value><![CDATA[]]></default_value>
+			<field_order>21</field_order>
+			<form_id>3</form_id>
+			<required>1</required>
+			<options><![CDATA[]]></options>
+			<field_options><![CDATA[{"admin_only":[""],"in_section":"0","invalid":"Courriel is invalid","classes":"frm12 frm_first"}]]></field_options>
+		</field>
+		<field>
+			<id>29</id>
+			<field_key><![CDATA[ccd0h]]></field_key>
+			<name><![CDATA[HTML]]></name>
+			<description><![CDATA[<p class="f-icon info">Aucune donnée que vous soumettez via ce formulaire n'est conservée sur nos serveurs.</p>]]></description>
+			<type><![CDATA[html]]></type>
+			<default_value><![CDATA[]]></default_value>
+			<field_order>23</field_order>
+			<form_id>3</form_id>
+			<required>0</required>
+			<options><![CDATA[]]></options>
+			<field_options><![CDATA[{"admin_only":[""],"in_section":"0","blank":"","classes":"frm12 frm_first"}]]></field_options>
+		</field>
+	</form>
+	<view>
+		<title>Formidable Style</title>
+		<link></link>
+		<post_author><![CDATA[laporte_jon]]></post_author>
+		<description></description>
+		<content><![CDATA[{"theme_css":"ui-lightness","theme_name":"UI Lightness","center_form":"","form_width":"100%","form_align":"left","direction":"ltr","fieldset":"0px","fieldset_color":"000000","fieldset_padding":"0 0 15px 0","fieldset_bg_color":"","title_size":"40px","title_color":"444444","title_margin_top":"10px","title_margin_bottom":"60px","form_desc_size":"14px","form_desc_color":"666666","form_desc_margin_top":"10px","form_desc_margin_bottom":"25px","form_desc_padding":"0","font":"\"Roboto\", sans-serif","font_size":"15px","label_color":"3f4b5b","weight":"normal","position":"none","align":"left","width":"150px","required_color":"B94A48","required_weight":"bold","label_padding":"0 0 3px 0","description_font_size":"12px","description_color":"666666","description_weight":"normal","description_style":"normal","description_align":"left","description_margin":"0","field_font_size":"14px","field_height":"32px","line_height":"normal","field_width":"100%","auto_width":"","field_pad":"6px 10px","field_margin":"20px","field_weight":"normal","text_color":"555555","border_color":"BFC3C8","field_border_width":"1px","field_border_style":"solid","bg_color":"ffffff","remove_box_shadow":"","bg_color_active":"ffffff","border_color_active":"66afe9","remove_box_shadow_active":"","text_color_error":"444444","bg_color_error":"ffffff","border_color_error":"B94A48","border_width_error":"1px","border_style_error":"solid","bg_color_disabled":"ffffff","border_color_disabled":"E5E5E5","text_color_disabled":"A1A1A1","radio_align":"block","check_align":"block","check_font_size":"13px","check_label_color":"444444","check_weight":"normal","section_font_size":"18px","section_color":"444444","section_weight":"bold","section_pad":"15px 0 3px 0","section_mar_top":"15px","section_mar_bottom":"30px","section_bg_color":"","section_border_color":"e8e8e8","section_border_width":"2px","section_border_style":"solid","section_border_loc":"-top","collapse_icon":"6","collapse_pos":"after","repeat_icon":"1","repeat_icon_color":"ffffff","submit_style":"","submit_font_size":"15px","submit_width":"auto","submit_height":"auto","submit_bg_color":"579AF6","submit_border_color":"579AF6","submit_border_width":"1px","submit_text_color":"ffffff","submit_weight":"normal","submit_border_radius":"0px","submit_bg_img":"","submit_margin":"10px","submit_padding":"10px 20px","submit_shadow_color":"eeeeee","submit_hover_bg_color":"efefef","submit_hover_color":"444444","submit_hover_border_color":"cccccc","submit_active_bg_color":"efefef","submit_active_color":"444444","submit_active_border_color":"cccccc","border_radius":"0px","error_bg":"F2DEDE","error_border":"EBCCD1","error_text":"B94A48","error_font_size":"14px","success_bg_color":"DFF0D8","success_border_color":"D6E9C6","success_text_color":"468847","success_font_size":"14px","important_style":"","progress_bg_color":"eaeaea","progress_active_color":"ffffff","progress_active_bg_color":"579AF6","progress_color":"3f4b5b","progress_border_color":"E5E5E5","progress_border_size":"2px","progress_size":"30px","custom_css":""}]]></content>
+		<excerpt><![CDATA[]]></excerpt>
+		<post_id>31971</post_id>
+		<post_date>2022-04-06 17:40:06</post_date>
+		<post_date_gmt>2022-04-06 17:40:06</post_date_gmt>
+		<comment_status>closed</comment_status>
+		<ping_status>closed</ping_status>
+		<post_name>formidable-style-2</post_name>
+		<status>publish</status>
+		<post_parent>0</post_parent>
+		<menu_order>1</menu_order>
+		<post_type>frm_styles</post_type>
+		<post_password><![CDATA[]]></post_password>
+		<is_sticky>0</is_sticky>
+	</view>
+	<view>
+		<title>Courriel envoyé</title>
+		<link></link>
+		<post_author><![CDATA[laporte_jon]]></post_author>
+		<description></description>
+		<content><![CDATA[{"event":["create"],"email_to":"[15]","cc":"","bcc":"","from":"[sitename] ","reply_to":"","email_subject":"Cerner son sujet","email_message":"[default-message]","email_attachment_id":"","conditions":{"send_stop":"send","any_all":"any"}}]]></content>
+		<excerpt><![CDATA[email]]></excerpt>
+		<post_id>31972</post_id>
+		<post_date>2022-04-06 17:40:34</post_date>
+		<post_date_gmt>2022-04-06 17:40:34</post_date_gmt>
+		<comment_status>closed</comment_status>
+		<ping_status>closed</ping_status>
+		<post_name>2_email_31972</post_name>
+		<status>publish</status>
+		<post_parent>0</post_parent>
+		<menu_order>2</menu_order>
+		<post_type>frm_form_actions</post_type>
+		<post_password><![CDATA[]]></post_password>
+		<is_sticky>0</is_sticky>
+		<postmeta>
+			<meta_key>_wp_old_slug</meta_key>
+			<meta_value><![CDATA[2_email_]]></meta_value>
+		</postmeta>
+	</view>
+	<view>
+		<title>Envoyer courriel</title>
+		<link></link>
+		<post_author><![CDATA[laporte_jon]]></post_author>
+		<description></description>
+		<content><![CDATA[{"event":["create"],"email_to":"[27]","cc":"","bcc":"","from":"[sitename] ","reply_to":"","email_subject":"Caract\u00e9ristiques de la documentation \u00e0 utiliser","email_message":"[default-message]","email_attachment_id":"","conditions":{"send_stop":"send","any_all":"any"}}]]></content>
+		<excerpt><![CDATA[email]]></excerpt>
+		<post_id>31980</post_id>
+		<post_date>2022-04-07 16:11:45</post_date>
+		<post_date_gmt>2022-04-07 16:11:45</post_date_gmt>
+		<comment_status>closed</comment_status>
+		<ping_status>closed</ping_status>
+		<post_name>3_email_31980</post_name>
+		<status>publish</status>
+		<post_parent>0</post_parent>
+		<menu_order>3</menu_order>
+		<post_type>frm_form_actions</post_type>
+		<post_password><![CDATA[]]></post_password>
+		<is_sticky>0</is_sticky>
+		<postmeta>
+			<meta_key>_wp_old_slug</meta_key>
+			<meta_value><![CDATA[3_email_]]></meta_value>
+		</postmeta>
+	</view>
+	<view>
+		<title>Courriel envoyé</title>
+		<link></link>
+		<post_author><![CDATA[laporte_jon]]></post_author>
+		<description></description>
+		<content><![CDATA[{"event":["create"],"email_to":"[13]","cc":"","bcc":"","from":"[sitename] <[admin_email]>","reply_to":"","email_subject":"","email_message":"[default-message]","email_attachment_id":"","conditions":{"send_stop":"send","any_all":"any"}}]]></content>
+		<excerpt><![CDATA[email]]></excerpt>
+		<post_id>32050</post_id>
+		<post_date>2022-04-06 17:40:34</post_date>
+		<post_date_gmt>0000-00-00 00:00:00</post_date_gmt>
+		<comment_status>closed</comment_status>
+		<ping_status>closed</ping_status>
+		<post_name>2_email_32050</post_name>
+		<status>draft</status>
+		<post_parent>0</post_parent>
+		<menu_order>2</menu_order>
+		<post_type>frm_form_actions</post_type>
+		<post_password><![CDATA[]]></post_password>
+		<is_sticky>0</is_sticky>
+		<postmeta>
+			<meta_key>_wp_old_slug</meta_key>
+			<meta_value><![CDATA[2_email_]]></meta_value>
+		</postmeta>
+	</view>
+	<view>
+		<title>Send Email</title>
+		<link></link>
+		<post_author><![CDATA[laporte_jon]]></post_author>
+		<description></description>
+		<content><![CDATA[{"email_to":"[admin_email]","cc":"","bcc":"","from":"[sitename] <[admin_email]>","reply_to":"","email_subject":"","email_message":"[default-message]","inc_user_info":"0","plain_text":"0","event":["create"],"conditions":{"send_stop":"","any_all":""}}]]></content>
+		<excerpt><![CDATA[email]]></excerpt>
+		<post_id>32051</post_id>
+		<post_date>2022-04-07 16:11:45</post_date>
+		<post_date_gmt>2022-04-07 16:11:45</post_date_gmt>
+		<comment_status>closed</comment_status>
+		<ping_status>closed</ping_status>
+		<post_name>3_email_-2</post_name>
+		<status>draft</status>
+		<post_parent>0</post_parent>
+		<menu_order>3</menu_order>
+		<post_type>frm_form_actions</post_type>
+		<post_password><![CDATA[]]></post_password>
+		<is_sticky>0</is_sticky>
+	</view>
+</channel>

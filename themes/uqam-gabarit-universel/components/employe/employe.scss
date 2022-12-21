@@ -1,0 +1,53 @@
+/**
+ * employe.scss
+ * Pour une futur page qui fais la liste des employé provenant du bottin
+ * Pas encore en fonction
+ */
+
+// Import
+@import "../../assets/styles/uqam-variables";
+//@import "../../assets/styles/media-queries";
+
+
+.employes_carte {
+	padding-top: 30px;
+
+	h3 {
+		margin: 0;
+	}
+	.employes_carte-poste {
+		margin-bottom: 10px;
+	}
+	.employes_carte-contact {
+		border-bottom: 1px solid $couleur-bordure;
+		padding-bottom: 30px;
+	}
+}
+
+.icone_employe {
+	display: block;
+	font-size: 1em;
+	padding: 0 0 0 25px;
+
+	&:before {
+		content: '';
+		width: 20px;
+		background: #333;
+		height: 20px;
+		display: inline-block;
+		position: absolute;
+		left: 15px;
+	}
+}
+
+.icone_employe-telephone:before {
+	@include mask-image(icone-Telephone, no-repeat center / 1em);
+}
+
+.icone_employe-courriel:before {
+	@include mask-image(icone-Courriel, no-repeat center / 1em);
+}
+
+.icone_employe-local:before {
+	@include mask-image(icone-Local, no-repeat center / 1em);
+}

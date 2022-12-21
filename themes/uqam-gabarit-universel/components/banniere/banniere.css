@@ -1,0 +1,57 @@
+@charset "UTF-8";
+/**
+ * banniere.scss
+ * Tout ce qui concerne les bannières en haut de page ainsi que la couleur à la droite des bannières
+ */
+/**
+ * _media-queries.scss
+ * MEDIA QUERIES
+ * Provient de: https://glennmccomb.com/articles/useful-sass-scss-media-query-mixins-for-bootstrap/
+ * Par Glenn McComb
+ *
+ * Fonctions à utiliser pour créer des Media Queries
+ */
+.banner-zone .metaslider {
+  background: var(--banner-bg-color);
+}
+
+.banner-zone .widget_metaslider_widget {
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .banner-bg-color {
+    background: var(--banner-bg-color);
+    background: linear-gradient(to bottom, var(--banner-bg-color) 0px, var(--banner-bg-color) var(--banner-height-lg), #ffffff var(--banner-height-lg), #ffffff 100%);
+  }
+  .banner-bg-image {
+    background: var(--banner-bg-color);
+    background: var(--banner-bg-image) center 0/auto var(--banner-height-lg) repeat-x, linear-gradient(to bottom, var(--banner-bg-color) 0px, var(--banner-bg-color) var(--banner-height-lg), #ffffff var(--banner-height-lg), #ffffff 100%);
+  }
+}
+@media (min-width: 1200px) {
+  .banner-bg-color {
+    background: var(--banner-bg-color);
+    background: linear-gradient(to bottom, var(--banner-bg-color) 0px, var(--banner-bg-color) var(--banner-height), #ffffff var(--banner-height), #ffffff 100%);
+  }
+  .banner-bg-image {
+    background: var(--banner-bg-color);
+    background: var(--banner-bg-image) center 0/auto var(--banner-height) repeat-x, linear-gradient(to bottom, var(--banner-bg-color) 0px, var(--banner-bg-color) var(--banner-height), #ffffff var(--banner-height), #ffffff 100%);
+  }
+}
+@media (min-width: 992px) {
+  body.compact:not(.home) .banner-zone {
+    height: 37px;
+    overflow-y: hidden;
+  }
+  body.compact:not(.home) .banner-bg-color {
+    background: linear-gradient(to bottom, var(--banner-bg-color) 0px, var(--banner-bg-color) 37px, #ffffff 37px, #ffffff 100%);
+  }
+  body.compact:not(.home) .banner-bg-image {
+    background: var(--banner-bg-image) center 0/auto 37px repeat-x, linear-gradient(to bottom, var(--banner-bg-color) 0px, var(--banner-bg-color) 37px, #ffffff 37px, #ffffff 100%);
+  }
+}
+
+#banner-zone-full .flexslider {
+  margin: 0;
+}/*# sourceMappingURL=banniere.css.map */

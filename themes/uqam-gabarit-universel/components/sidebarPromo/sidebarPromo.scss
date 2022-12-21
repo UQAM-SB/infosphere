@@ -1,0 +1,84 @@
+/**
+ * promoSidebar.scss
+ */
+
+// Import
+@import "../../assets/styles/uqam-variables";
+@import "../../assets/styles/media-queries";
+
+.promo-sidebar {
+	h1, h2, h3, h4, h5, h6,
+	.widget-title {
+		color: var(--col-left-title-color);
+	}
+
+	p, dl, dt, dd, li, th, td, pre, code,
+	.textwidget {
+		color: var(--col-left-text-color);
+		margin-bottom: 1.25rem;
+	}
+
+	aside:last-child {
+		padding-bottom: 40px;
+	}
+
+	nav:not(:first-child):before,
+	aside:before {
+		content: '';
+		display: block;
+		border-top: 2px solid var(--col-left-separators);
+		margin: 0 15px;
+		padding-top: 35px;
+	}
+
+	a {
+		color: var(--col-left-link-color);
+
+		&:link, &:visited {
+			color: var(--col-left-link-color);
+		}
+
+		&:hover, &:focus, &:active {
+			text-decoration: underline;
+		}
+
+	}
+}
+
+@include respond-below(lg) {
+	#promo-footer {
+		background: var(--menu-bg-color);
+		text-align: center;
+
+		.promo-sidebar {
+			display: inline-block;
+			margin: 0 16px 16px;
+
+			img {
+				max-width: 100%;
+				height: auto;
+			}
+
+			&:last-child {
+				margin-bottom: 2rem;
+			}
+		}
+	}
+}
+
+@include respond-above(lg) {
+	.promo-sidebar {
+		margin-bottom: 25px;
+
+		.promo {
+			max-width: 330px;
+			padding: 0;
+			text-align: center;
+
+			img {
+				max-width: 100%;
+				height: auto;
+			}
+		}
+	}
+}

@@ -1,0 +1,202 @@
+@charset "UTF-8";
+/**
+ * footer-uqam.scss
+ * Footer
+ */
+/**
+ * _uqam-variables.scss
+ * Variable lié à l'UQAM
+ * Mixin pour aider à créer du CSS
+ */
+/**
+ * _media-queries.scss
+ * MEDIA QUERIES
+ * Provient de: https://glennmccomb.com/articles/useful-sass-scss-media-query-mixins-for-bootstrap/
+ * Par Glenn McComb
+ *
+ * Fonctions à utiliser pour créer des Media Queries
+ */
+#mainframe-footer {
+  background: #00243A;
+  background: linear-gradient(to bottom, #00243A 0%, #00243A 71%, #000000 50%, #000000 50%, #000000 100%);
+  border-top: thick solid #fff;
+  color: #fff;
+}
+@media (max-width: 991px) {
+  #mainframe-footer .container {
+    max-width: none;
+  }
+}
+#mainframe-footer a {
+  color: #fff;
+}
+#mainframe-footer a:link, #mainframe-footer a:visited, #mainframe-footer a:hover, #mainframe-footer a:focus, #mainframe-footer a:active {
+  color: #fff;
+}
+@media (min-width: 992px) {
+  #mainframe-footer {
+    background: #00243A;
+    border-top: thick solid;
+    font-size: 0.8rem;
+  }
+}
+
+#foot-uqam {
+  margin-bottom: 1rem;
+}
+@media (min-width: 992px) {
+  #foot-uqam {
+    margin-bottom: 0;
+    border-right: 1px solid rgba(129, 146, 156, 0.4);
+  }
+  #foot-uqam p {
+    padding-left: 1rem;
+  }
+}
+
+#foot-info .list-inline-item {
+  display: list-item;
+}
+#foot-info ul li {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+#foot-info ul li + li {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+#foot-info ul li + li::before {
+  content: "";
+  padding-right: 0;
+}
+@media (max-width: 991px) {
+  #foot-info ul li + li::after {
+    content: "";
+    background: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/png/fleche_blanc@2x.png") right center/7px no-repeat;
+    background: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/fleche_blanc.svg") right center/7px no-repeat;
+    padding-left: 1rem;
+  }
+}
+@media (min-width: 992px) {
+  #foot-info {
+    padding-left: 30px;
+  }
+  #foot-info ul li {
+    font-size: 0.8rem;
+    font-weight: normal;
+  }
+  #foot-info ul li.list-inline-item {
+    display: inline-block;
+  }
+  #foot-info ul li + li {
+    font-size: 0.8rem;
+    font-weight: normal;
+  }
+  #foot-info ul li + li::before {
+    content: "";
+    background: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/png/fleche_blanc@2x.png") left center/7px no-repeat;
+    background: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/fleche_blanc.svg") left center/7px no-repeat;
+    padding-right: 1rem;
+  }
+  #foot-info ul li + li::after {
+    content: "";
+  }
+}
+
+#foot-a11y.pb-sp {
+  padding-bottom: 0.25rem !important;
+}
+#foot-a11y .link-a11y::before, #foot-a11y .link-a11y::after {
+  position: relative;
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0.6rem;
+}
+#foot-a11y .link-a11y::before {
+  left: -0.6rem;
+  margin-left: 1rem;
+  background: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/png/accessibilite_blanc_2@2x.png") no-repeat 0 0;
+  background: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/accessibilite_blanc_2.svg") no-repeat 0 0;
+}
+#foot-a11y .link-a11y::after {
+  background: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/png/fleche_blanc@2x.png") left center/7px no-repeat;
+  background: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/fleche_blanc.svg") left center/7px no-repeat;
+  margin-left: 1rem;
+}
+@media (min-width: 992px) {
+  #foot-a11y {
+    padding-right: 30px;
+  }
+  #foot-a11y.pb-sp {
+    padding-bottom: 0.5rem !important;
+  }
+}
+
+#content-center {
+  min-height: calc(100vh - 338px);
+}
+@media (min-width: 768px) {
+  #content-center {
+    min-height: calc(100vh - 338px);
+  }
+}
+@media (min-width: 992px) {
+  #content-center {
+    min-height: calc(100vh - 193px);
+  }
+}
+@media (min-width: 1200px) {
+  #content-center {
+    min-height: calc(100vh - 175px);
+  }
+}
+
+.admin-bar #content-center {
+  min-height: calc(100vh - 383px);
+}
+@media (min-width: 768px) {
+  .admin-bar #content-center {
+    min-height: calc(100vh - 369px);
+  }
+}
+@media (min-width: 992px) {
+  .admin-bar #content-center {
+    min-height: calc(100vh - 224px);
+  }
+}
+@media (min-width: 1200px) {
+  .admin-bar #content-center {
+    min-height: calc(100vh - 206px);
+  }
+}
+
+@media (min-width: 992px) {
+  #mainframe-footer.uqam {
+    border-top-color: #0079be;
+  }
+  #mainframe-footer.esg-faculte {
+    border-top-color: #c0311a;
+  }
+  #mainframe-footer.com-faculte {
+    border-top-color: #eeb111;
+  }
+  #mainframe-footer.pol-faculte {
+    border-top-color: #5091cd;
+  }
+  #mainframe-footer.art-faculte {
+    border-top-color: #7b7d72;
+  }
+  #mainframe-footer.sci-faculte {
+    border-top-color: #40b239;
+  }
+  #mainframe-footer.edu-faculte {
+    border-top-color: #f57b20;
+  }
+  #mainframe-footer.fsh-faculte {
+    border-top-color: #af006e;
+  }
+  #mainframe-footer.vie-faculte {
+    border-top-color: #00ade6;
+  }
+}/*# sourceMappingURL=footer-uqam.css.map */

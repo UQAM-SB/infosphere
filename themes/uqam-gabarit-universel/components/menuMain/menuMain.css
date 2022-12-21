@@ -1,0 +1,168 @@
+@charset "UTF-8";
+/**
+ * menuMain.scss
+ * Tout ce qui concerne le menu principal qui se retrouve dans la colonne de gauche
+ */
+/**
+ * _uqam-variables.scss
+ * Variable lié à l'UQAM
+ * Mixin pour aider à créer du CSS
+ */
+/**
+ * _media-queries.scss
+ * MEDIA QUERIES
+ * Provient de: https://glennmccomb.com/articles/useful-sass-scss-media-query-mixins-for-bootstrap/
+ * Par Glenn McComb
+ *
+ * Fonctions à utiliser pour créer des Media Queries
+ */
+.menu {
+  list-style: none;
+}
+.menu a {
+  display: block;
+  text-decoration: none;
+}
+.menu ul {
+  list-style: none;
+}
+.menu li ul {
+  display: none;
+  padding-bottom: 10px;
+}
+.menu li.current-menu-parent > ul {
+  display: block;
+}
+.menu li.current-menu-ancestor > ul {
+  display: block;
+}
+
+@media (min-width: 992px) {
+  #content-left {
+    background: var(--menu-bg-color);
+  }
+  .menu-bg-color {
+    background: var(--col-left-bg-color); /* Old browsers */
+    background: linear-gradient(to right, var(--col-left-bg-color) 0%, var(--col-left-bg-color) 40%, transparent 40%, transparent 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  }
+  .menu {
+    padding: 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+  .menu:first-child a {
+    margin-top: 0;
+  }
+  .menu a,
+.menu a:link,
+.menu a:visited {
+    color: var(--menu-text-color);
+  }
+  .menu > li {
+    margin-bottom: 2px;
+  }
+  .menu > li a {
+    padding: 4px 40px 4px 15px;
+    margin: 6px 0 0 0;
+  }
+  .menu > li > a {
+    font-weight: 500;
+    padding: 6px 10px 6px 15px;
+  }
+  .menu > li > .sub-menu > li > a {
+    font-weight: 500;
+  }
+  .menu a:hover {
+    color: var(--menu-bg-color);
+    background-color: var(--menu-text-color);
+  }
+  .menu > li.active {
+    background-color: var(--menu-bg-color-2);
+  }
+  .menu .sub-menu {
+    background-color: var(--menu-bg-color-2);
+    list-style: none;
+    padding-left: 15px;
+  }
+  .menu .sub-menu li {
+    position: relative;
+  }
+  .menu .sub-menu li a:before {
+    content: "";
+    -webkit-mask: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/puce.svg") no-repeat center left/contain;
+            mask: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/puce.svg") no-repeat center left/contain;
+    background-color: var(--menu-text-color);
+    position: absolute;
+    left: 0.5rem;
+    top: 0.75rem;
+    height: 0.45rem;
+    width: 0.45rem;
+    opacity: 0.3;
+    padding: 0 0.5rem;
+  }
+  .menu .sub-menu li a:hover:before {
+    background-color: var(--menu-bg-color);
+  }
+  .menu .sub-menu > li > a {
+    padding-left: 26px;
+  }
+  .menu .sub-menu .current-menu-item a:before {
+    background-color: var(--menu-bg-color);
+  }
+  .menu .menu-item-ancestor > a,
+.menu .menu-item-has-children > a {
+    text-decoration: none;
+    padding-right: 40px;
+    position: relative;
+  }
+  .menu .menu-item-ancestor > a:after,
+.menu .menu-item-has-children > a:after {
+    -webkit-mask: url(https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/plus_blanc.svg) no-repeat center right/contain;
+            mask: url(https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/plus_blanc.svg) no-repeat center right/contain;
+    content: "";
+    background-color: var(--menu-text-color);
+    text-decoration: none;
+    position: absolute;
+    padding: 5px;
+    top: calc(50% - 5px);
+    display: inline-block;
+    right: 15px;
+  }
+  .menu .menu-item-ancestor > a.active:before, .menu .menu-item-ancestor > a:hover:before, .menu .menu-item-ancestor > a:hover:after,
+.menu .menu-item-has-children > a.active:before,
+.menu .menu-item-has-children > a:hover:before,
+.menu .menu-item-has-children > a:hover:after {
+    background-color: var(--menu-bg-color);
+  }
+  .menu .menu-item-ancestor > a.active:after,
+.menu .menu-item-has-children > a.active:after {
+    -webkit-mask: url(https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/moins_blanc.svg) no-repeat center right/contain;
+            mask: url(https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/moins_blanc.svg) no-repeat center right/contain;
+  }
+  .menu .current-menu-item a {
+    color: var(--menu-bg-color);
+    background-color: var(--menu-text-color);
+  }
+  .menu > .current-menu-ancestor.active > a,
+.menu .sub-menu .current-menu-ancestor.active > a,
+.menu .current-menu-parent > a.active,
+.menu .menu-item-has-children > a.active {
+    color: var(--menu-text-color);
+    text-decoration: none;
+  }
+  .menu > .current-menu-ancestor.active > a:hover,
+.menu .sub-menu .current-menu-ancestor.active > a:hover,
+.menu .current-menu-parent > a.active:hover,
+.menu .menu-item-has-children > a.active:hover {
+    color: var(--menu-bg-color);
+  }
+  .menu > .current-menu-ancestor.active > a:before,
+.menu .sub-menu .current-menu-ancestor.active > a:before,
+.menu .current-menu-parent > a.active:before,
+.menu .menu-item-has-children > a.active:before {
+    background-color: var(--menu-text-color);
+  }
+  .majuscule-menu .menu > li > a {
+    text-transform: uppercase;
+  }
+}/*# sourceMappingURL=menuMain.css.map */

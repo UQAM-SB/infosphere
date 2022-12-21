@@ -1,0 +1,396 @@
+@charset "UTF-8";
+/**
+ * gutenberg.scss
+ * Style custom pour tous les blocs Gutenberg et Advanced Gutenberg
+ */
+/**
+ * _uqam-variables.scss
+ * Variable lié à l'UQAM
+ * Mixin pour aider à créer du CSS
+ */
+/**
+ * _media-queries.scss
+ * MEDIA QUERIES
+ * Provient de: https://glennmccomb.com/articles/useful-sass-scss-media-query-mixins-for-bootstrap/
+ * Par Glenn McComb
+ *
+ * Fonctions à utiliser pour créer des Media Queries
+ */
+.wp-block-columns {
+  margin-bottom: 0;
+}
+.wp-block-columns .wp-block-column {
+  margin-bottom: 25px;
+}
+@media (min-width: 992px) {
+  .wp-block-columns .wp-block-column {
+    margin-bottom: 40px;
+  }
+}
+.wp-block-columns .wp-block-column h2:first-child, .wp-block-columns .wp-block-column h3:first-child, .wp-block-columns .wp-block-column h4:first-child, .wp-block-columns .wp-block-column h5:first-child, .wp-block-columns .wp-block-column h6:first-child {
+  margin-top: 0;
+}
+
+.wp-block-buttons .wp-block-button,
+.wp-block-buttons .nf-field-element,
+.submit-container .wp-block-button,
+.submit-container .nf-field-element {
+  margin: 0 15px 15px 0;
+}
+.wp-block-buttons .wp-block-button a,
+.wp-block-buttons .wp-block-button input[type=button],
+.wp-block-buttons .nf-field-element a,
+.wp-block-buttons .nf-field-element input[type=button],
+.submit-container .wp-block-button a,
+.submit-container .wp-block-button input[type=button],
+.submit-container .nf-field-element a,
+.submit-container .nf-field-element input[type=button] {
+  background-image: none;
+  background-color: #0079be;
+  border-radius: 0 !important;
+  color: #FFF;
+  font-size: 1rem;
+  padding: 13px 16px 12px;
+  text-transform: uppercase;
+}
+.wp-block-buttons .wp-block-button a:hover,
+.wp-block-buttons .wp-block-button input[type=button]:hover,
+.wp-block-buttons .nf-field-element a:hover,
+.wp-block-buttons .nf-field-element input[type=button]:hover,
+.submit-container .wp-block-button a:hover,
+.submit-container .wp-block-button input[type=button]:hover,
+.submit-container .nf-field-element a:hover,
+.submit-container .nf-field-element input[type=button]:hover {
+  color: #FFF;
+  background-color: #00243A;
+}
+.wp-block-buttons .wp-block-button.is-style-fleche a,
+.wp-block-buttons .nf-field-element.is-style-fleche a,
+.submit-container .wp-block-button.is-style-fleche a,
+.submit-container .nf-field-element.is-style-fleche a {
+  padding-right: 50px;
+  position: relative;
+}
+.wp-block-buttons .wp-block-button.is-style-fleche a:after,
+.wp-block-buttons .nf-field-element.is-style-fleche a:after,
+.submit-container .wp-block-button.is-style-fleche a:after,
+.submit-container .nf-field-element.is-style-fleche a:after {
+  -webkit-mask: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/fleche_blanc.svg") center center/7px 13px no-repeat;
+          mask: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/fleche_blanc.svg") center center/7px 13px no-repeat;
+  background-color: #FFF;
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: 15px;
+  top: 0;
+  height: 100%;
+  width: 7px;
+}
+
+.wp-block-quote,
+.wp-block-pullquote {
+  border-left: 3px solid #ccc;
+  padding: 2px 0 2px 25px;
+  text-align: left;
+}
+.wp-block-quote p:last-child,
+.wp-block-pullquote p:last-child {
+  margin-bottom: 0;
+}
+.wp-block-quote.is-style-large,
+.wp-block-pullquote.is-style-large {
+  padding-left: 40px;
+  font-size: 1.5rem;
+}
+.wp-block-quote.is-style-large p,
+.wp-block-pullquote.is-style-large p {
+  font-style: normal;
+}
+
+.wp-block-pullquote {
+  font-size: 1.5rem;
+  float: right;
+  padding-left: 40px;
+}
+@media (min-width: 768px) {
+  .wp-block-pullquote {
+    margin-left: 40px;
+    width: 40%;
+  }
+}
+
+.wp-block-file .wp-block-file__button {
+  display: none;
+}
+
+.wp-block-image figure.alignleft {
+  margin-top: 1rem;
+}
+
+.content-center .wp-block-gallery {
+  padding: 0;
+}
+.content-center .wp-block-gallery .blocks-gallery-grid {
+  padding: 0;
+}
+
+.wp-block-media-text .wp-block-media-text__content .has-large-font-size {
+  font-size: 1rem;
+}
+
+#main-content .advgb-tabs-wrapper {
+  margin: 1.25rem 0;
+}
+#main-content .advgb-tabs-wrapper .advgb-tabs-panel .advgb-tab {
+  background-color: var(--global-accordion-color, #efefef) !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  padding: 0;
+}
+#main-content .advgb-tabs-wrapper .advgb-tabs-panel .advgb-tab:before {
+  content: none;
+}
+#main-content .advgb-tabs-wrapper .advgb-tabs-panel .advgb-tab a {
+  color: var(--global-accordion-color-alt, #333) !important;
+}
+#main-content .advgb-tabs-wrapper .advgb-tabs-panel .advgb-tab-active, #main-content .advgb-tabs-wrapper .advgb-tabs-panel .advgb-tab:hover {
+  background-color: var(--global-accordion-color-alt, #333) !important;
+}
+#main-content .advgb-tabs-wrapper .advgb-tabs-panel .advgb-tab-active a, #main-content .advgb-tabs-wrapper .advgb-tabs-panel .advgb-tab:hover a {
+  color: var(--global-accordion-color-text, #FFF) !important;
+}
+#main-content .advgb-tabs-wrapper .advgb-tab-body-wrapper {
+  border: none !important;
+}
+#main-content .advgb-tabs-wrapper .advgb-tab-body-wrapper .advgb-tab-body {
+  padding: 20px 40px;
+}
+#main-content .advgb-tabs-wrapper .advgb-tab-body-wrapper .advgb-tab-body-container .advgb-tab-body-header {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  position: relative;
+}
+#main-content .advgb-tabs-wrapper .advgb-tab-body-wrapper .advgb-tab-body-container .advgb-tab-body-header:after {
+  content: "";
+  -webkit-mask: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/plus.svg") center right/13px no-repeat;
+          mask: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/plus.svg") center right/13px no-repeat;
+  background-color: var(--global-accordion-color-alt, #333);
+  height: 100%;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px;
+}
+#main-content .advgb-tabs-wrapper .advgb-tab-body-wrapper .advgb-tab-body-container .header-active {
+  background-color: var(--global-accordion-color-alt, #333) !important;
+  color: var(--global-accordion-color-text, #FFF) !important;
+}
+#main-content .advgb-tabs-wrapper .advgb-tab-body-wrapper .advgb-tab-body-container .header-active:after {
+  content: none;
+}
+#main-content .advgb-tabs-wrapper .advgb-tab-body-wrapper .advgb-tab-body-container .advgb-tab-body {
+  border: 1px solid var(--global-accordion-color-alt, #333);
+}
+@media (min-width: 768px) {
+  #main-content .advgb-tab-horz-tablet .advgb-tab {
+    margin: 3px 3px 0 0;
+  }
+  #main-content .advgb-tab-vert-tablet .advgb-tab {
+    margin: 0 0 3px 0;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #main-content .advgb-tab-horz-desktop .advgb-tab {
+    margin: 3px 3px 0 0;
+  }
+  #main-content .advgb-tab-vert-desktop .advgb-tab {
+    margin: 0 0 3px 0;
+  }
+}
+
+.advgb-images-slider-block .slick-dots {
+  display: none !important;
+}
+
+#main-content .blue-message,
+#main-content .green-message,
+#main-content .orange-message,
+#main-content .red-message,
+#main-content .grey-message {
+  background-color: #FFF;
+  border: 1px solid rgba(0, 0, 0, 0.2039215686);
+  color: var(--global-text-color);
+  font-size: 1rem;
+  padding: 40px 40px 40px 80px;
+  position: relative;
+}
+#main-content .blue-message:before,
+#main-content .green-message:before,
+#main-content .orange-message:before,
+#main-content .red-message:before,
+#main-content .grey-message:before {
+  background-color: rgba(0, 0, 0, 0.2039215686);
+  content: "";
+  display: inline-block;
+  -webkit-mask: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/message-info.svg") center center/32px 32px no-repeat;
+          mask: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/message-info.svg") center center/32px 32px no-repeat;
+  position: absolute;
+  left: 25px;
+  top: 35px;
+  height: 32px;
+  width: 32px;
+}
+#main-content .blue-message {
+  background-color: rgba(0, 121, 190, 0.0509803922);
+  border-color: rgba(0, 121, 190, 0.3019607843);
+}
+#main-content .blue-message:before {
+  background-color: #0079BE;
+}
+#main-content .green-message {
+  background-color: rgba(64, 178, 57, 0.0509803922);
+  border-color: rgba(64, 178, 57, 0.3019607843);
+}
+#main-content .green-message:before {
+  background-color: #40B239;
+}
+#main-content .orange-message {
+  background-color: rgba(255, 137, 0, 0.0509803922);
+  border-color: rgba(255, 137, 0, 0.3019607843);
+}
+#main-content .orange-message:before {
+  background-color: #FF8900;
+}
+#main-content .red-message {
+  background-color: rgba(213, 0, 24, 0.0509803922);
+  border-color: rgba(213, 0, 24, 0.3019607843);
+}
+#main-content .red-message:before {
+  background-color: #D50018;
+}
+
+.content-center .advgb-testimonial-wrapper {
+  padding: 0 !important;
+}
+.content-center .advgb-testimonial-wrapper .advgb-testimonial {
+  margin: 45px -45px 45px 0;
+}
+.content-center .advgb-testimonial-wrapper .advgb-testimonial .advgb-testimonial-item {
+  margin: 0;
+  padding: 0 45px 0 0;
+}
+.content-center .advgb-testimonial-wrapper .advgb-testimonial .advgb-testimonial-item .advgb-testimonial-avatar-group {
+  padding-bottom: 25px;
+}
+.content-center .advgb-testimonial-wrapper .advgb-testimonial .advgb-testimonial-item .advgb-testimonial-avatar-group .advgb-testimonial-avatar {
+  align-items: center;
+  border: 0;
+  display: flex;
+  margin: 0;
+}
+.content-center .advgb-testimonial-wrapper .advgb-testimonial .advgb-testimonial-item .advgb-testimonial-avatar-group .advgb-testimonial-avatar img {
+  max-height: 100%;
+  max-width: unset !important;
+  width: 100%;
+}
+.content-center .advgb-testimonial-wrapper .advgb-testimonial .advgb-testimonial-item .advgb-testimonial-info .advgb-testimonial-name {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0;
+  padding: 0 0 15px;
+}
+.content-center .advgb-testimonial-wrapper .advgb-testimonial .advgb-testimonial-item .advgb-testimonial-info .advgb-testimonial-position {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin: 0;
+  padding-bottom: 15px;
+  text-transform: none;
+}
+.content-center .advgb-testimonial-wrapper .advgb-testimonial .advgb-testimonial-item .advgb-testimonial-info .advgb-testimonial-desc {
+  font-size: 0.875rem;
+}
+.content-center .advgb-testimonial-wrapper .advgb-testimonial.advgb-avatar-left .advgb-testimonial-info {
+  text-align: left;
+}
+.content-center .advgb-testimonial-wrapper .advgb-testimonial.advgb-avatar-left .advgb-testimonial-avatar-group {
+  padding-bottom: 0;
+}
+.content-center .advgb-testimonial-wrapper .advgb-testimonial.advgb-avatar-left .advgb-testimonial-avatar-group .advgb-testimonial-avatar {
+  align-items: flex-start;
+  padding-right: 25px;
+  padding-bottom: 0;
+}
+.content-center .advgb-testimonial-wrapper .advgb-testimonial.slider-view .slick-list {
+  margin: 0 55px;
+  padding: 0 !important;
+}
+.content-center .advgb-testimonial-wrapper .advgb-slider-arrow {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  width: 55px !important;
+}
+.content-center .advgb-testimonial-wrapper .advgb-slider-arrow.advgb-slider-prev {
+  left: 0;
+}
+.content-center .advgb-testimonial-wrapper .advgb-slider-arrow.advgb-slider-next {
+  right: 0;
+}
+.content-center .advgb-testimonial-wrapper .advgb-slider-arrow.slick-disabled {
+  display: none !important;
+}
+.content-center .advgb-testimonial-wrapper .advgb-slider-arrow svg {
+  fill: #0079be;
+}
+
+/*
+.wp-block-advgb-testimonial {
+
+	.advgb-slider-arrow svg {
+		fill: #0079be;
+	}
+
+	.advgb-testimonial-item {
+		width: 270px;
+	}
+
+	.advgb-testimonial-info {
+		padding-left: 20px;
+	}
+
+	.advgb-testimonial-avatar-group {
+		height: 100px;
+		text-align: left;
+
+		.advgb-testimonial-avatar {
+			height: auto !important;
+			position: absolute;
+			top: 50%;
+			left: -60px;
+			-ms-transform: translateY(-50%);
+			transform: translateY(-50%);
+			margin: 0;
+		}
+	}
+	h4 {
+		margin-bottom: 0;
+		text-align: left;
+		padding-left: 0 !important;
+	}
+
+	h4 + p {
+		text-transform: none !important;
+		text-align: left;
+	}
+
+	h4 + p + p {
+		text-align: left;
+
+		& a::after {
+			content: ' >';
+			font-weight: bold;
+		}
+	}
+}
+*//*# sourceMappingURL=gutenberg.css.map */

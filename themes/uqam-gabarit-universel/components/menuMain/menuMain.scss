@@ -1,0 +1,176 @@
+/**
+ * menuMain.scss
+ * Tout ce qui concerne le menu principal qui se retrouve dans la colonne de gauche
+ */
+
+// Import
+@import "../../assets/styles/uqam-variables";
+@import "../../assets/styles/media-queries";
+
+.menu {
+	list-style: none;
+
+	a {
+		display: block;
+		text-decoration: none;
+	}
+
+	ul {
+		list-style: none;
+	}
+
+	li ul {
+		display: none;
+		padding-bottom: 10px;
+	}
+	li.current-menu-parent > ul {
+		display: block;
+	}
+	li.current-menu-ancestor > ul {
+		display: block;
+	}
+}
+
+
+// Background Couleurs
+@include respond-above(lg) {
+
+	#content-left {
+		background: var(--menu-bg-color);
+	}
+	.menu-bg-color {
+		background: var(--col-left-bg-color); /* Old browsers */
+		background: linear-gradient(to right, var(--col-left-bg-color) 0%, var(--col-left-bg-color) 40%, transparent 40%, transparent 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	}
+	.menu {
+		padding: 0;
+		font-size: 15px;
+		margin-bottom: 30px;
+
+		&:first-child a {
+			margin-top: 0;
+		}
+		a,
+		a:link,
+		a:visited {
+			color: var(--menu-text-color);
+		}
+		> li {
+			margin-bottom: 2px;
+
+			a {
+				padding: 4px 40px 4px 15px;
+				margin: 6px 0 0 0;
+			}
+			> a {
+				font-weight: 500;
+				padding: 6px 10px 6px 15px
+			}
+			> .sub-menu {
+				> li {
+					> a {
+						font-weight: 500;
+					}
+				}
+			}
+		}
+		a:hover {
+			color: var(--menu-bg-color);
+			background-color: var(--menu-text-color);
+		}
+		> li.active {
+			background-color: var(--menu-bg-color-2);
+		}
+
+		.sub-menu {
+			background-color: var(--menu-bg-color-2);
+			list-style: none;
+			padding-left: 15px;
+
+			li {
+				position: relative;
+
+				a:before {
+					content: '';
+					@include mask-image(puce, no-repeat center left / contain);
+					background-color: var(--menu-text-color);
+					position: absolute;
+					left: 0.5rem;
+					top: 0.75rem;
+					height: 0.45rem;
+					width: 0.45rem;
+					opacity: 0.3;
+					padding: 0 0.5rem;
+				}
+				a:hover:before {
+					background-color: var(--menu-bg-color);
+				}
+			}
+			> li > a {
+				padding-left: 26px;
+			}
+
+			.current-menu-item a:before {
+				background-color: var(--menu-bg-color);
+			}
+		}
+
+		.menu-item-ancestor > a,
+		.menu-item-has-children > a {
+			text-decoration: none;
+			padding-right: 40px;
+			position: relative;
+
+			&:after {
+				mask: $plus_blanc no-repeat center right / contain;
+				content: '';
+				background-color: var(--menu-text-color);
+				text-decoration: none;
+				position: absolute;
+				padding: 5px;
+				top: calc(50% - 5px);
+				display: inline-block;
+				right: 15px;
+			}
+			&.active:before,
+			&:hover:before,
+			&:hover:after {
+				background-color: var(--menu-bg-color);
+			}
+			&.active:after {
+				mask: $moins_blanc no-repeat center right / contain;
+			}
+		}
+
+		.current-menu-item a {
+			color: var(--menu-bg-color);
+			background-color: var(--menu-text-color);
+		}
+
+		> .current-menu-ancestor.active > a,
+		.sub-menu .current-menu-ancestor.active > a,
+		.current-menu-parent > a.active,
+		.menu-item-has-children > a.active {
+			color: var(--menu-text-color);
+			text-decoration: none;
+
+			&:hover {
+				color: var(--menu-bg-color);
+			}
+
+			&:before {
+				background-color: var(--menu-text-color);
+			}
+		}
+	}
+
+	.majuscule-menu {
+		.menu {
+			> li {
+				> a {
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+}

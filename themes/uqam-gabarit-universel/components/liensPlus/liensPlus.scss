@@ -1,0 +1,146 @@
+/**
+ * liensPlus.scss
+ * Bouton + qui apparait à côté du logo de l'UQAM dans le header
+ */
+
+// Import
+@import "../../assets/styles/uqam-variables";
+@import "../../assets/styles/media-queries";
+
+
+#quick-links {
+
+	.esg-faculte & {
+		display: none !important;
+	}
+
+	button {
+		width: 24px;
+		height: 24px;
+		position: absolute;
+		top: 26px;
+		right: 40px;
+		@include bg-image(plus, no-repeat center center rgba(0, 0, 0, 0.4));
+		border: 0;
+		box-shadow: none;
+		cursor: pointer;
+		@include radius(5px);
+
+		&:after {
+			display: none;
+		}
+
+		&:hover {
+			background-color: rgba(0, 0, 0, 0.8);
+		}
+	}
+
+	&.show button {
+		@include bg-image(moins_blanc, rgba(0, 0, 0, 0.4) no-repeat center center/ 12px);
+
+		&:hover {
+			background-color: rgba(0, 0, 0, 0.8);
+		}
+	}
+
+	@include couleurFaculte('.dropdown-menu', background-color);
+	.dropdown-menu {
+		border: 3px solid #fff;
+		padding: 0px;
+		@include radius(10px);
+		margin-top: 30px;
+		margin-left: -134px;
+		width: 294px;
+
+		.background {
+			background-color: rgba(0, 0, 0, 0.4);
+			border: 0px;
+			@include radius(5px);
+			padding: 55px 40px;
+
+			&:before {
+				border-color: #fff transparent;
+				border-style: solid;
+				border-width: 0 25px 25px;
+				content: "";
+				display: block;
+				margin: 0 -25px 0 0;
+				position: absolute;
+				right: 50%;
+				top: -25px;
+			}
+
+			&:after {
+				border-style: solid;
+				border-width: 0px 20px 20px;
+				content: "";
+				display: block;
+				margin: 1px -20px 0 0;
+				position: absolute;
+				right: 50%;
+				top: -20px;
+				border-right-color: transparent;
+				border-left-color: transparent;
+			}
+
+			&.uqam:after {
+				border-top-color: #004972;
+				border-bottom-color: #004972;
+			}
+
+			&.esg-faculte:after {
+				border-top-color: #731d10;
+				border-bottom-color: #731d10;
+			}
+
+			&.com-faculte:after {
+				border-top-color: #8a6b1b;
+				border-bottom-color: #8a6b1b;
+			}
+
+			&.pol-faculte:after {
+				border-top-color: #30577b;
+				border-bottom-color: #30577b;
+			}
+
+			&.art-faculte:after {
+				border-top-color: #4a4b44;
+				border-bottom-color: #4a4b44;
+			}
+
+			&.sci-faculte:after {
+				border-top-color: #266b22;
+				border-bottom-color: #266b22;
+			}
+
+			&.edu-faculte:after {
+				border-top-color: #934a13;
+				border-bottom-color: #934a13;
+			}
+
+			&.fsh-faculte:after {
+				border-top-color: #6a134a;
+				border-bottom-color: #6a134a;
+			}
+
+			&.vie-faculte:after {
+				border-top-color: #00688a;
+				border-bottom-color: #00688a;
+			}
+
+			a {
+				padding: 7px 0px;
+				border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+				color: #fff;
+				font-weight: 500;
+				font-size: 16px;
+				font-family: "Roboto", sans-serif;
+
+				&:hover {
+					text-decoration: underline;
+					background: none;
+				}
+			}
+		}
+	}
+}

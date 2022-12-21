@@ -1,0 +1,37 @@
+@charset "UTF-8";
+/**
+ * titre.scss
+ */
+/**
+ * _uqam-variables.scss
+ * Variable lié à l'UQAM
+ * Mixin pour aider à créer du CSS
+ */
+/**
+ * _media-queries.scss
+ * MEDIA QUERIES
+ * Provient de: https://glennmccomb.com/articles/useful-sass-scss-media-query-mixins-for-bootstrap/
+ * Par Glenn McComb
+ *
+ * Fonctions à utiliser pour créer des Media Queries
+ */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--global-title-color);
+  margin-bottom: 1rem;
+}
+
+.content-center h2, .content-center h3, .content-center h4, .content-center h5, .content-center h6,
+.main-content h2,
+.main-content h3,
+.main-content h4,
+.main-content h5,
+.main-content h6 {
+  margin-top: 2.813rem;
+}
+.content-center h2 + h3, .content-center h3 + h4, .content-center h4 + h5, .content-center h5 + h6,
+.main-content h2 + h3,
+.main-content h3 + h4,
+.main-content h4 + h5,
+.main-content h5 + h6 {
+  margin-top: inherit;
+}/*# sourceMappingURL=titre.css.map */

@@ -1,0 +1,128 @@
+@charset "UTF-8";
+/**
+ * menuMobile.scss
+ * Tout ce qui concerne le menu principal lorsque nous somme dans la version mobile
+ */
+/**
+ * _uqam-variables.scss
+ * Variable lié à l'UQAM
+ * Mixin pour aider à créer du CSS
+ */
+/**
+ * _media-queries.scss
+ * MEDIA QUERIES
+ * Provient de: https://glennmccomb.com/articles/useful-sass-scss-media-query-mixins-for-bootstrap/
+ * Par Glenn McComb
+ *
+ * Fonctions à utiliser pour créer des Media Queries
+ */
+.mobileMenuTrigger {
+  background: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/png/menu_mobile_blanc@2x.png") center no-repeat;
+  background: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/menu_mobile_blanc.svg") center no-repeat;
+  background-size: 16px;
+  background-position: center right 18px;
+  border: none;
+  color: transparent;
+  cursor: pointer;
+  height: 32px;
+  width: 100%;
+  padding: 5px;
+  z-index: 1000;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+
+.menuMobile_button-fermer {
+  background: transparent;
+  border: none;
+  padding: 0 0 10px;
+  opacity: 1;
+}
+
+.menuMobile_button-fermer:after {
+  content: "";
+  background: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/png/fleche_blanc@2x.png") center no-repeat;
+  background: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/fleche_blanc.svg") center no-repeat;
+  background-size: 0.75rem;
+  display: inline-block;
+  padding: 1rem;
+  transform: rotate(-90deg);
+}
+
+.mobileMenu {
+  background-color: #002439 !important;
+  border: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0 0 0.5rem;
+  border: none;
+}
+.mobileMenu .container-fluid,
+.mobileMenu .container {
+  display: block;
+}
+@media (max-width: 991px) {
+  .mobileMenu .container {
+    max-width: none;
+  }
+}
+.mobileMenu .menu {
+  padding-left: 0;
+}
+.mobileMenu .menu a {
+  color: #fff;
+}
+.mobileMenu .menu > li {
+  background-color: var(--menu-color-mobile);
+  margin-bottom: 2px;
+  transition: background-color 0.25s linear;
+}
+.mobileMenu .menu > li.current-menu-item,
+.mobileMenu .menu > li .current-menu-item {
+  background-color: var(--menu-color-mobile-active);
+}
+.mobileMenu .menu > li.active {
+  background-color: var(--menu-color-2-mobile);
+}
+.mobileMenu .menu > li a {
+  padding: 8px 45px 8px 15px;
+}
+.mobileMenu .menu .sub-menu {
+  color: #718591;
+  list-style: none;
+  padding-left: 0;
+  margin-left: 15px;
+}
+.mobileMenu .menu .sub-menu li {
+  position: relative;
+}
+.mobileMenu .menu .sub-menu li a:before {
+  content: "";
+  -webkit-mask: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/puce.svg") no-repeat center left/contain;
+          mask: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/puce.svg") no-repeat center left/contain;
+  background-color: #fff;
+  position: absolute;
+  left: 0.5rem;
+  top: 1rem;
+  height: 0.5rem;
+  width: 0.5rem;
+}
+.mobileMenu .menu .sub-menu > li > a {
+  padding-left: 26px;
+}
+.mobileMenu .menu .menu-item-ancestor > a,
+.mobileMenu .menu .menu-item-has-children > a {
+  background: url(https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/plus_blanc.svg) no-repeat calc(100% - 15px) center;
+  text-decoration: none;
+  background-size: 10px;
+}
+.mobileMenu .menu > .current-menu-ancestor.active > a,
+.mobileMenu .menu .sub-menu .current-menu-ancestor.active > a,
+.mobileMenu .menu .current-menu-parent > a.active,
+.mobileMenu .menu .menu-item-has-children > a.active {
+  background: url(https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/moins_blanc.svg) no-repeat calc(100% - 13px) center;
+  background-size: 14px;
+  text-decoration: none;
+}/*# sourceMappingURL=menuMobile.css.map */

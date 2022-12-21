@@ -1,0 +1,125 @@
+/**
+ * menuMobile.scss
+ * Tout ce qui concerne le menu principal lorsque nous somme dans la version mobile
+ */
+
+// Import
+@import "../../assets/styles/uqam-variables";
+@import "../../assets/styles/media-queries";
+
+
+.mobileMenuTrigger {
+	@include bg-image(menu_mobile_blanc, center no-repeat);
+	background-size: 16px;
+	background-position: center right 18px;
+	border: none;
+	color: transparent;
+	cursor: pointer;
+	height: 32px;
+	width: 100%;
+	padding: 5px;
+	z-index: 1000;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 0;
+}
+
+.menuMobile_button-fermer {
+	background: transparent;
+	border: none;
+	padding: 0 0 10px;
+	opacity: 1;
+}
+
+.menuMobile_button-fermer:after {
+	content: '';
+	@include bg-image(fleche_blanc, center no-repeat);
+	background-size: 0.75rem;
+	display: inline-block;
+	padding: 1rem;
+	transform: rotate(-90deg);
+}
+
+.mobileMenu {
+	background-color: #002439 !important;
+	border: 0;
+	width: 100%;
+	margin: 0;
+	padding: 0 0 0.5rem;
+	border: none;
+
+	.container-fluid,
+	.container {
+		display: block;
+	}
+
+	@include respond-below(lg) {
+		.container {
+			max-width: none;
+		}
+	}
+
+	.menu {
+		padding-left: 0;
+
+		a {
+			color: #fff;
+		}
+		> li {
+			background-color: var(--menu-color-mobile);
+			margin-bottom: 2px;
+			transition: background-color 0.25s linear;
+			&.current-menu-item,
+			.current-menu-item {
+				background-color: var(--menu-color-mobile-active);
+			}
+			&.active {
+				background-color: var(--menu-color-2-mobile);
+			}
+			a {
+				padding: 8px 45px 8px 15px;
+			}
+		}
+		.sub-menu {
+			color: #718591;
+			list-style: none;
+			padding-left: 0;
+			margin-left: 15px;
+
+			li {
+				position: relative;
+
+				a:before {
+					content: '';
+					@include mask-image(puce, no-repeat center left / contain);
+					background-color: #fff;
+					position: absolute;
+					left: 0.5rem;
+					top: 1rem;
+					height: 0.5rem;
+					width: 0.5rem;
+				}
+			}
+			> li > a {
+				padding-left: 26px;
+			}
+		}
+
+		.menu-item-ancestor > a,
+		.menu-item-has-children > a {
+			background: $plus_blanc no-repeat calc(100% - 15px) center;
+			text-decoration: none;
+			background-size: 10px;
+		}
+
+		> .current-menu-ancestor.active > a,
+		.sub-menu .current-menu-ancestor.active > a,
+		.current-menu-parent > a.active,
+		.menu-item-has-children > a.active {
+			background: $moins_blanc no-repeat calc(100% - 13px) center;
+			background-size: 14px;
+			text-decoration: none;
+		}
+	}
+}

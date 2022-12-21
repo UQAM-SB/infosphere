@@ -1,0 +1,116 @@
+/**
+ * editor.scss
+ * Import tous les élément SCSS pour l'ADMIN de Wordpress
+ */
+
+// TODO: Vérifier le fonctionnement de ce fichier et comment faire changement de visuel pour l'ADMIN Worpdress
+
+// Block Gutenberg
+.block-editor-panel-color-gradient-settings {
+	display: none;
+}
+
+// Editor Styles
+body.wp-editor {
+	color: #333;
+	.mce-content-body {
+		a {
+			color: #007bff;
+			text-decoration: none;
+		}
+
+		// Format styles
+		span.button {
+			text-align: center;
+			display: block;
+
+			a {
+				color: #fff;
+				font-size: 14px;
+				text-transform: uppercase;
+				display: inline-block;
+				padding: 5px 10px;
+				background-color: #0079be;
+				cursor: pointer;
+
+				&:hover {
+					background-color: #004972;
+					text-decoration: none;
+				}
+			}
+		}
+
+		span.externe a {
+			display: inline-block;
+			padding-right: 20px;
+			cursor: pointer;
+			background: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/png/fleche_bleu_uqam@2x.png") no-repeat right/7px;
+			background: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/fleche_bleu_uqam.svg") no-repeat right/7px;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+
+		div.encadre {
+			display: block;
+			padding: 40px;
+			border: solid #d9d9d9 1px;
+		}
+
+		// Table Styles
+		table {
+			margin: 0 0 1.5em;
+			width: 100%;
+
+			tr {
+				background: #fff;
+
+				&:nth-child(even) {
+					background: #eee;
+				}
+			}
+
+			thead {
+				background: #fff;
+				font-weight: bold;
+				text-transform: uppercase;
+
+				+ tbody tr {
+					background: #fff;
+
+					&:nth-child(odd) {
+						background: #eee;
+					}
+
+					&:nth-child(even) {
+						background: #fff;
+					}
+				}
+
+				th {
+					text-transform: uppercase;
+					padding: 25px 20px;
+				}
+			}
+
+			td {
+				padding: 15px 20px;
+			}
+
+			caption {
+				caption-side: bottom;
+				text-align: left;
+			}
+		}
+	}
+
+	// editor button, windowmanager buttons
+	.mce-layout-col button i {
+		background-repeat: no-repeat;
+		background-size: inherit;
+		margin-top: -3px;
+	}
+}
+
+

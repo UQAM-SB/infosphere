@@ -1,0 +1,16 @@
+{
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "targets": {
+                    "ie": 11,
+                    "edge": 17
+                }
+            }
+        ]
+    ],
+    "plugins": [
+        "@babel/plugin-transform-runtime"
+    ]
+}

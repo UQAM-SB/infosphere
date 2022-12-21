@@ -1,0 +1,22 @@
+/**
+ * titre.scss
+ */
+// Import
+@import "../../assets/styles/uqam-variables";
+@import "../../assets/styles/media-queries";
+
+
+h1, h2, h3, h4, h5, h6 {
+	color: var(--global-title-color);
+	margin-bottom: 1rem;
+}
+
+.content-center,
+.main-content {
+	h2, h3, h4, h5, h6 {
+		margin-top: 2.813rem;
+	}
+	h2 + h3, h3 + h4, h4 + h5, h5 + h6 {
+		margin-top: inherit;
+	}
+}

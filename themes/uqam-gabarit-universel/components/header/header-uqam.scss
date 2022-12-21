@@ -1,0 +1,176 @@
+/**
+ * header-uqam.scss
+ */
+
+// Import
+@import "../../assets/styles/uqam-variables";
+@import "../../assets/styles/media-queries";
+
+
+@include couleurFaculte(#mainframe-header, background-color);
+$paddingX-mobile: 15px;
+
+#mainframe-header {
+
+	#header-mobile {
+
+		.logo {
+			height: 45px;
+			padding: 12px $paddingX-mobile;
+			margin: 0px;
+
+			img {
+				height: 21px;
+				width: auto;
+				vertical-align: baseline;
+			}
+		}
+
+		#sub-header {
+			background-color: $uqam-bg-dark;
+			min-height: 45px;
+			height: auto;
+			margin: 0px;
+			padding: 0px $paddingX-mobile;
+
+			.navbar-brand {
+				white-space: normal;
+			}
+
+			span {
+				margin-bottom: 0;
+
+				> a {
+					color: #fff;
+					font-size: 1rem;
+					font-weight: 700;
+					margin: 0;
+					margin-right: 1rem;
+					display: block;
+					text-decoration: none;
+				}
+			}
+
+			h2 {
+				display: none;
+			}
+		}
+	}
+}
+
+// Breakpoint lg - 992px
+@include respond-above(lg) {
+
+	#header-large {
+		max-width: 1200px;
+		min-height: 75px;
+		margin: 0 auto;
+		padding-left: 15px;
+		padding-right: 15px;
+
+		// Couleurs de l'arrière-plan selon la faculté
+		.uqam #header-mobile {
+			background-color: $uqam-bg;
+		}
+		.esg-faculte #header-mobile {
+			background-color: $esg-bg;
+		}
+		.com-faculte #header-mobile {
+			background-color: $com-bg;
+		}
+		.pol-faculte #header-mobile {
+			background-color: $pol-bg;
+		}
+		.art-faculte #header-mobile {
+			background-color: $art-bg;
+		}
+		.sci-faculte #header-mobile {
+			background-color: $sci-bg;
+		}
+		.edu-faculte #header-mobile {
+			background-color: $edu-bg;
+		}
+		.fsh-faculte #header-mobile {
+			background-color: $fsh-bg;
+		}
+		.vie-faculte #header-mobile {
+			background-color: $vie-bg;
+		}
+		.logo {
+			padding: 19px 30px 13px 0px;
+			height: 75px;
+
+			img {
+				max-height: 40px;
+				width: auto;
+
+				&.esg {
+					padding-top: 5px;
+				}
+			}
+		}
+
+		#header-title {
+			padding-top: 20px;
+
+			.site-title {
+				padding: 0 15px 0px 0px;
+				min-height: 45px;
+				a {
+					font-size: 1.125rem;
+					font-weight: 700;
+				}
+			}
+
+			.row {
+				border-left: 1px solid rgba(255, 255, 255, 0.2);
+				padding: 5px 0px 5px 30px;
+				height: 100%;
+				margin-left: -1.9rem;
+
+				span a {
+					color: #fff;
+					font-family: "Roboto", sans-serif;
+					display: block;
+					margin-bottom: 1rem;
+					text-decoration: none;
+
+					&.large {
+						margin-bottom: 0.5em;
+					}
+				}
+
+				h2 {
+					color: #fff;
+					display: block;
+					font-family: "Roboto", sans-serif;
+					font-size: 14px;
+					font-weight: normal;
+					line-height: 0.75em;
+					margin: -4px 0px 0px;
+				}
+			}
+		}
+	}
+}
+
+@include respond-below(lg) {
+	.header-uqam {
+		width: 100%;
+		max-width: none;
+		padding: 0;
+	}
+}
+
+
+// Breakpoint between lg - xl
+@include respond-between(md, lg) {
+
+	.esg-faculte #header-large .logo {
+
+		img {
+			max-height: 32px;
+			padding-top: 9px;
+		}
+	}
+}

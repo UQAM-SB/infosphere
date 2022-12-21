@@ -1,0 +1,101 @@
+/**
+ * tableau.scss
+ * Solution pour les tableau sur mobile
+ */
+
+// Import
+@import "../../assets/styles/uqam-variables";
+//@import "../../assets/styles/media-queries";
+
+
+table {
+	thead {
+		background-color: #FFF;
+		border-bottom: 2px solid $couleur-bordure;
+		border-top: 2px solid $couleur-bordure;
+		text-transform: uppercase;
+	}
+	tr {
+		border-bottom: 1px solid $couleur-bordure;
+
+	}
+	th, td {
+		padding: 13px 20px 13px 0;
+	}
+
+	// Tablesorter
+	.tablesorter-header:not(.sorter-false) {
+		cursor: pointer;
+
+		&.tablesorter-headerAsc {
+			.tablesorter-header-inner {
+				&:after {
+					@include mask-image(fleche_blanc_bas, bottom right / 12px 13px no-repeat);
+				}
+			}
+		}
+		&.tablesorter-headerDesc {
+			.tablesorter-header-inner {
+				&:after {
+					@include mask-image(fleche_blanc_haut, top right / 12px 13px no-repeat);
+				}
+			}
+		}
+		.tablesorter-header-inner {
+			&:after {
+				background-color: $uqam-bg;
+				content: '';
+				display: inline-block;
+				height: 15px;
+				margin-left: 5px;
+				@include mask-image(fleche_blanc_hautBas, center right / 12px 13px no-repeat);
+				width: 12px;
+			}
+		}
+	}
+
+}
+
+
+// Scrollable table (ajout de dégradé lorsque le tableau ne rentre pas dans l'écran)
+.scrollableTable {
+	width: 100%;
+	position: relative;
+
+	.degrade {
+		height: 100%;
+		width: 10%;
+		max-width: 30%;
+		position: absolute;
+		overflow-y: hidden;
+		background: none;
+
+		&.droit {
+			right: 0;
+			background: linear-gradient(-90deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0))
+		}
+
+		&.gauche {
+			left: 0;
+			background: linear-gradient(90deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0))
+		}
+	}
+
+	table {
+		display: block;
+		overflow-x: auto;
+		width: 100%;
+		max-width: 100%;
+	}
+}
+
+.scrollableTable table td,
+.encadre_table table th {
+	white-space: nowrap;
+}
+
+
+// Podio
+table.dataTable {
+	border-collapse: collapse;
+}

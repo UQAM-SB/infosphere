@@ -1,0 +1,119 @@
+@charset "UTF-8";
+/**
+ * babillard.scss
+ */
+/**
+ * _uqam-variables.scss
+ * Variable lié à l'UQAM
+ * Mixin pour aider à créer du CSS
+ */
+/**
+ * _media-queries.scss
+ * MEDIA QUERIES
+ * Provient de: https://glennmccomb.com/articles/useful-sass-scss-media-query-mixins-for-bootstrap/
+ * Par Glenn McComb
+ *
+ * Fonctions à utiliser pour créer des Media Queries
+ */
+.babillard.widget .widget-title {
+  border-right: 1px solid rgba(0, 0, 0, 0.15);
+}
+.babillard.widget .uqam_babillard-all {
+  float: right;
+  font-size: 1.125rem;
+  margin-left: 2rem;
+}
+.babillard.widget .uqam_babillard-all::after {
+  content: "";
+  background: url(https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/fleche_bleu_uqam.svg) left center no-repeat;
+  background-size: 6px;
+  margin-left: 0.35rem;
+  padding: 0.25rem;
+}
+.babillard.widget .uqam_babillard-container {
+  width: 100%;
+  border-top: none;
+  padding-top: 0;
+}
+.babillard.widget .uqam_babillard-container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.babillard.widget .uqam_babillard-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1.875em;
+  width: 100%;
+  margin: 0 0 1.25rem;
+  padding: 0 0 1.375rem;
+}
+.babillard.widget article {
+  display: block;
+  float: none;
+  width: inherit;
+  margin-right: inherit;
+}
+.babillard.widget article .uqam_babillard-title {
+  font-size: 1.125rem;
+  font-weight: normal;
+  line-height: 1.5rem;
+  margin-top: 0;
+}
+.babillard.widget article .uqam_babillard-image img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 0.625rem;
+}
+.babillard.widget article .uqam_babillard-date {
+  font-size: 0.875em;
+  margin-top: 0.625rem;
+}
+.babillard.widget article .uqam_babillard-excerpt {
+  margin-top: 1rem;
+}
+
+@media (max-width: 767px) {
+  .babillard.widget .uqam_babillard-container {
+    width: 100%;
+    margin: 0 0 1.25rem;
+  }
+  .babillard.widget .uqam_babillard-wrapper {
+    display: block;
+  }
+  .babillard.widget .uqam_babillard-wrapper .uqam_babillard-all {
+    display: block;
+    float: right;
+  }
+  .babillard.widget .uqam_babillard-wrapper .uqam_babillard-all::after {
+    content: "";
+    background: url(https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/fleche_bleu_uqam.svg) left center no-repeat;
+    background-size: 6px;
+    margin-left: 0.35rem;
+    padding: 0.25rem;
+  }
+  .babillard.widget article {
+    width: 100%;
+    margin: 0 0 1.25rem;
+    padding: 0 0 1.375rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  }
+  .babillard.widget article .uqam_babillard-image {
+    max-width: 100%;
+  }
+  .babillard.widget article .uqam_babillard-image img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+  }
+  .babillard.widget article .uqam_babillard-title {
+    line-height: 1.5rem;
+  }
+}
+@media (min-width: 568px) and (max-width: 767px) {
+  .babillard.widget article {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 2em;
+  }
+}/*# sourceMappingURL=babillard.css.map */

@@ -1,0 +1,72 @@
+/**
+ * customClass.scss
+ * Styliser les class custom
+ */
+
+// Import
+@import "../../assets/styles/uqam-variables";
+@import "../../assets/styles/media-queries";
+
+
+// Border
+.border-top-light {
+	border-top: 1px solid $couleur-bordure;
+}
+
+.border-top-large {
+	border-top: 2px solid $couleur-bordure;
+}
+
+@include respond-below(lg) {
+	aside.border-bottom {
+		border-bottom: 3px double #dee2e6 !important;
+	}
+}
+
+
+// LIEN
+// En savoir plus
+.savoirPlus {
+	display: inline-block;
+	padding-right: 20px;
+	cursor: pointer;
+	@include bg-image(fleche_bleu_uqam, no-repeat right / 7px);
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+// Lien ancre
+.lien-ancre {
+	p {
+		height: 100%;
+	}
+	a {
+		background-color: #FAFAFA;
+		border-top: 2px solid #FAFAFA;
+		color: #333;
+		height: 100%;
+		padding: 10px 15px 45px;
+		position: relative;
+		&:after {
+			@include bg-image(fleche_long_bleu_bas, no-repeat center center / 10px 10px);
+			border: 2px solid #0079BE;
+			border-radius: 15px;
+			content: '';
+			display: block;
+			height: 25px;
+			width: 25px;
+			position: absolute;
+			bottom: 10px;
+			left: 15px;
+		}
+		&:hover {
+			border-top: 2px solid #333;
+			text-decoration: none;
+
+		}
+		&:hover:after {
+			@include bg-image(fleche_long_blanc_bas, no-repeat center center / 10px 10px #0079BE);
+		}
+	}
+}

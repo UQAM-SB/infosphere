@@ -1,0 +1,137 @@
+@charset "UTF-8";
+/**
+ * breadcrumb.scss
+ */
+/**
+ * _uqam-variables.scss
+ * Variable lié à l'UQAM
+ * Mixin pour aider à créer du CSS
+ */
+/**
+ * _media-queries.scss
+ * MEDIA QUERIES
+ * Provient de: https://glennmccomb.com/articles/useful-sass-scss-media-query-mixins-for-bootstrap/
+ * Par Glenn McComb
+ *
+ * Fonctions à utiliser pour créer des Media Queries
+ */
+.breadcrumb-wrapper {
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.breadcrumb {
+  font-size: 0.875em;
+  padding: 0.5rem 1rem 0.5rem 1.875rem;
+}
+.breadcrumb li:first-child + li + li {
+  display: none;
+}
+.breadcrumb li:first-child + li + li:last-child {
+  display: block;
+}
+.breadcrumb a {
+  color: #0079be;
+}
+.breadcrumb a:after {
+  padding-left: 0.5rem;
+  content: ">";
+  padding-right: 0.25rem;
+  display: inline-block;
+}
+.breadcrumb a:hover:after {
+  text-decoration: none;
+}
+
+/* Choix de langue */
+/***************************/
+#language-switcher .wpml-ls {
+  border: 0;
+  padding: 0;
+  position: relative;
+  top: -2px;
+}
+#language-switcher .wpml-ls ul {
+  text-align: right;
+}
+#language-switcher .wpml-ls ul li a {
+  color: #FFF;
+  padding: 2px 5px 7px 0;
+}
+#language-switcher .wpml-ls ul li a:after {
+  content: "";
+  padding: 0;
+}
+#language-switcher .wpml-ls ul li a span {
+  padding-left: 15px;
+}
+#language-switcher .wpml-ls ul li.wpml-ls-current-language a {
+  background: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/png/phylactere_blanc@2x.png") right center no-repeat;
+  background: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/phylactere_blanc.svg") right center no-repeat;
+  color: #000;
+}
+#language-switcher .wpml-ls ul li:first-child a {
+  background-position: left;
+  padding-right: 0;
+  padding-left: 10px;
+}
+#language-switcher .wpml-ls ul li:first-child a span {
+  border-right: 1px solid #FFF;
+  padding-left: 0;
+  padding-right: 15px;
+}
+#language-switcher .wpml-ls ul li:last-child a span {
+  border-right: none;
+}
+
+@media (min-width: 0px) and (max-width: 300px) {
+  #header-mobile .idlogo nav aside#language-switcher ul {
+    width: 90px;
+  }
+}
+@media (min-width: 301px) {
+  #header-mobile .idlogo nav aside#language-switcher ul {
+    width: auto;
+  }
+}
+@media (max-width: 991px) {
+  #header-mobile #logo > div + div {
+    padding-right: 2px;
+  }
+  #header-mobile #logo > div + div nav {
+    padding-right: 0;
+  }
+}
+@media (min-width: 992px) {
+  #language-switcher {
+    padding-top: 0.5rem;
+    padding-bottom: 0.2rem;
+  }
+  #language-switcher .wpml-ls {
+    top: 0;
+  }
+  #language-switcher .wpml-ls ul li a {
+    color: #0079be;
+    padding-top: 4px;
+  }
+  #language-switcher .wpml-ls ul li a span {
+    padding-top: 2px;
+  }
+  #language-switcher .wpml-ls ul li.wpml-ls-current-language a {
+    background: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/png/phylactere_bleu@2x.png") right center no-repeat;
+    background: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/phylactere_bleu.svg") right center no-repeat;
+    color: #FFF;
+  }
+  #language-switcher .wpml-ls ul li:first-child a {
+    background-position: left;
+    padding-right: 0;
+    padding-left: 7px;
+  }
+  #language-switcher .wpml-ls ul li:first-child a span {
+    border-right: 1px solid #d9d9d9;
+    padding-right: 18px;
+  }
+  #language-switcher .wpml-ls ul li:last-child a span {
+    border-right: none;
+  }
+}/*# sourceMappingURL=breadcrumb.css.map */

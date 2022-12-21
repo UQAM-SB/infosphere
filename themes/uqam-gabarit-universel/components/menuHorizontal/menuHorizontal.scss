@@ -1,0 +1,105 @@
+/**
+ * menuHorizontal.scss
+ * Tout ce qui concerne le menu horzontal qui se retrouve en dessous du fil ariane
+ */
+// Import
+@import "../../assets/styles/uqam-variables";
+@import "../../assets/styles/media-queries";
+
+.top-menu-wrapper {
+	background: var(--menu-bg-color-horizontal);
+	position: relative;
+	z-index: 10;
+
+	.top-menu {
+		ul.horizontal-menu {
+			> li {
+				background-color: var(--menu-bg-color-horizontal);
+				margin-right: 4px;
+				> a {
+					color: var(--menu-text-color-horizontal);
+					padding: 20px;
+					&:focus,
+					&:hover,
+					&:active {
+						background-color: var(--menu-bg-color-2-horizontal);
+					}
+				}
+				// == Level 2 ==
+				> ul {
+					background-color: var(--menu-bg-color-2-horizontal);
+					padding: 20px 20px 15px;
+					margin: 0;
+					border: 0;
+					> li {
+						list-style: none;
+						margin: 0 0 5px;
+						min-width: 250px;
+						a {
+							padding: 4px 40px 4px 25px;
+							position: relative;
+							color: var(--menu-text-color-horizontal);
+							&:before {
+								content: '';
+								@include mask-image(puce, no-repeat center left / contain);
+								background-color: #000;
+								position: absolute;
+								left: 0.5rem;
+								top: 0.75rem;
+								height: 0.45rem;
+								width: 0.45rem;
+								opacity: 0.3;
+								padding: 0 0.5rem;
+							}
+						}
+						&.current-menu-item a,
+						a:hover,
+						a:active,
+						a:focus {
+							background-color: var(--menu-bg-color-horizontal);
+						}
+					}
+				}
+				&:hover {
+					> ul {
+						display: block;
+						visibility: visible;
+						opacity: 1;
+					}
+				}
+				&.current-menu-item,
+				&.current-menu-ancestor,
+				&:hover {
+					> a {
+						background-color: var(--menu-bg-color-2-horizontal);
+					}
+				}
+				&.menu-item-has-children {
+					> a {
+						padding-right: 30px;
+						&:after {
+							background-color: var(--menu-text-color-horizontal);
+							content: '';
+							display: inline-block;
+							margin-left: 15px;
+							@include mask-image(fleche_blanc_bas, no-repeat center);
+							height: 6px;
+							width: 11px;
+						}
+					}
+
+				}
+			}
+			.dropdown {
+				&-header {
+					font-size: inherit;
+					padding: inherit;
+				}
+				&-item {
+					white-space: normal;
+					word-break: inherit;
+				}
+			}
+		}
+	}
+}

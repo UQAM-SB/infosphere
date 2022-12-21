@@ -1,0 +1,146 @@
+/**
+ * evenements.scss
+ */
+@import "../../assets/styles/uqam-variables";
+@import "../../assets/styles/media-queries";
+
+.evenements.widget{
+
+  .widget-title{
+    border-right: 1px solid rgba(0, 0, 0, 0.15);
+  }
+
+  .uqam_evenements-all{
+    float: right;
+    font-size: 1.125rem;
+    margin-left: 2rem;
+
+    &::after{
+      content: '';
+      background: url(https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/fleche_bleu_uqam.svg) left center no-repeat;
+      background-size: 6px;
+      margin-left: 0.35rem;
+      padding: 0.25rem;
+    }
+  }
+
+  .uqam_evenements-container{
+    width: 100%;
+    border-top: none;
+    padding-top: 0;
+
+    &::after{
+      content: '';
+      display: table;
+      clear: both;
+    }
+  }
+
+  .uqam_evenements-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1.875em;
+    width: 100%;
+    margin: 0 0 1.25rem;
+    padding: 0 0 1.375rem;
+  }
+
+  article{
+    display: block;
+    float: none;
+    width: inherit;
+    margin-right: inherit;
+
+    .uqam_evenements-title{
+      font-size: 1.125rem;
+      font-weight: normal;
+      line-height: 1.5rem;
+      margin-top: 0;
+    }
+
+    img{
+      width: 100%;
+      height: auto;
+      margin-bottom: 0.625rem;
+    }
+
+    .uqam_evenements-content{
+      font-size: 0.875em;
+    }
+
+    .uqam_evenements-date{
+      margin-top: 0.625rem;
+    }
+  }
+
+}
+
+//Mobile
+@include respond-below(md) {
+  .evenements.widget{
+
+    .uqam_evenements-container{
+      width: 100%;
+      margin: 0 0 1.25rem;
+    }
+
+    .uqam_evenements-wrapper{
+      display: block;
+
+      .uqam_evenements-all{
+        display: block;
+        float: right;
+
+        &::after{
+          content: '';
+          background: url(https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/fleche_bleu_uqam.svg) left center no-repeat;
+          background-size: 6px;
+          margin-left: 0.35rem;
+          padding: 0.25rem;
+        }
+      }
+    }
+
+    .uqam_evenements-content{
+      margin-top: 0px !important;
+    }
+
+    .uqam_evenements-date{
+      margin-top: 0.625rem;
+    }
+
+    article{
+      width: 100%;
+      margin: 0 0 1.25rem;
+      padding: 0 0 1.375rem;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+
+      .uqam_evenements-image{
+        max-width: 100%;
+
+        img{
+          max-width: 100%;
+          width: auto;
+          height: auto;
+        }
+      }
+
+      .uqam_evenements-title{
+        line-height: 1.5rem;
+      }
+    }
+
+  }
+}
+
+@include respond-between(sm, md){
+  .evenements.widget{
+
+    article {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-gap: 2em;
+    }
+
+  }
+}

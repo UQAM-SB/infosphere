@@ -1,0 +1,283 @@
+@charset "UTF-8";
+/**
+ * service.scss
+ */
+/**
+ * _uqam-variables.scss
+ * Variable lié à l'UQAM
+ * Mixin pour aider à créer du CSS
+ */
+/**
+ * _media-queries.scss
+ * MEDIA QUERIES
+ * Provient de: https://glennmccomb.com/articles/useful-sass-scss-media-query-mixins-for-bootstrap/
+ * Par Glenn McComb
+ *
+ * Fonctions à utiliser pour créer des Media Queries
+ */
+.fiche-service .fiche-contenu h2, .fiche-service .fiche-contenu h3, .fiche-service .fiche-contenu h4, .fiche-service .fiche-contenu h5, .fiche-service .fiche-contenu h6 {
+  margin-top: 0;
+}
+.fiche-service .fiche-contenu section {
+  border-top: 1px solid #ccc;
+}
+.fiche-service .fiche-contenu section:first-of-type {
+  border-top: 0;
+}
+
+.usagers {
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.usagers-term {
+  background: #333;
+  color: #fff;
+  padding: 1px 5px;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 3px 1px;
+}
+.usagers-label {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin: 3px 10px 3px 0;
+}
+.usagers-data {
+  display: inline-block;
+}
+
+.bloc_service {
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+.bloc_service .bloc_service-titre {
+  margin: 0;
+  background-color: var(--global-title-color);
+  color: #fff;
+  font-size: 1em;
+  text-transform: uppercase;
+  padding: 10px 10px 10px 55px;
+}
+.bloc_service .bloc_service-titre:before {
+  content: "";
+  width: 20px;
+  background: #fff;
+  height: 20px;
+  display: inline-block;
+  position: absolute;
+  left: 35px;
+}
+@media (min-width: 768px) {
+  .bloc_service .bloc_service-titre:before {
+    left: 25px;
+  }
+}
+.bloc_service .icone_service-obtenir:before {
+  -webkit-mask: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/icone-Obtention.svg") no-repeat center/1em;
+          mask: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/icone-Obtention.svg") no-repeat center/1em;
+}
+.bloc_service .icone_service-telephone:before {
+  -webkit-mask: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/icone-Telephone.svg") no-repeat center/1em;
+          mask: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/icone-Telephone.svg") no-repeat center/1em;
+}
+.bloc_service .icone_service-courriel:before {
+  -webkit-mask: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/icone-Courriel.svg") no-repeat center/1em;
+          mask: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/icone-Courriel.svg") no-repeat center/1em;
+}
+.bloc_service .icone_service-formulaire:before {
+  -webkit-mask: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/icone-Fleche.svg") no-repeat 6px center/0.65em;
+          mask: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/icone-Fleche.svg") no-repeat 6px center/0.65em;
+}
+.bloc_service .icone_service-local:before {
+  -webkit-mask: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/icone-Local.svg") no-repeat center/1em;
+          mask: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/icone-Local.svg") no-repeat center/1em;
+}
+.bloc_service .icone_service-url:before {
+  -webkit-mask: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/icone-Fleche.svg") no-repeat center;
+          mask: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/icone-Fleche.svg") no-repeat center;
+}
+.bloc_service .icone_service-horaire:before {
+  -webkit-mask: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/icone-Horaire.svg") no-repeat center/1em;
+          mask: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/icone-Horaire.svg") no-repeat center/1em;
+}
+.bloc_service .icone_service-tarifs:before {
+  -webkit-mask: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/icone-Tarifs.svg") no-repeat center/1em;
+          mask: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/icone-Tarifs.svg") no-repeat center/1em;
+}
+.bloc_service .icone_service-partenaires:before {
+  -webkit-mask: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/icone-Partenaires.svg") no-repeat center/1em;
+          mask: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/icone-Partenaires.svg") no-repeat center/1em;
+}
+.bloc_service .icone_service-personne:before {
+  -webkit-mask: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/icone-Personne.svg") no-repeat center/1em;
+          mask: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/icone-Personne.svg") no-repeat center/1em;
+}
+.bloc_service .bloc_service-content {
+  padding: 25px 20px;
+  font-size: 0.875rem;
+}
+@media (min-width: 768px) {
+  .bloc_service .bloc_service-content {
+    padding: 25px;
+  }
+}
+.bloc_service .bloc_service-content > div {
+  margin-top: 20px;
+}
+.bloc_service .bloc_service-content > div:first-child {
+  margin-top: 0;
+}
+.bloc_service .bloc_service-content h3 {
+  margin: 0 0 1rem;
+  font-size: 1rem;
+}
+.bloc_service .bloc_service-content h3:nth-child(2n) {
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+.bloc_service .bloc_service-content p:last-child {
+  margin-bottom: 0;
+}
+.bloc_service .bloc_service-content ul {
+  padding-left: 20px;
+}
+.bloc_service .bloc_service-content ul li a {
+  font-size: 0.875rem;
+}
+.bloc_service .bloc_service-content .point_contact {
+  margin-bottom: 1rem;
+}
+.bloc_service .bloc_service-content .point_contact p {
+  margin-bottom: 5px;
+  padding-left: 25px;
+}
+.bloc_service .bloc_service-content .point_contact p:last-child {
+  margin-bottom: 0;
+}
+.bloc_service .bloc_service-content .point_contact:last-child {
+  margin-bottom: 0;
+}
+.bloc_service .bloc_service-content .bloc_service-description p {
+  padding-left: 0;
+}
+.bloc_service .bloc_service-content .bloc_service-label {
+  font-weight: 500;
+}
+.bloc_service .bloc_service-content .icone_service {
+  display: block;
+  font-size: 1em;
+  padding: 0 0 0 25px;
+}
+.bloc_service .bloc_service-content .icone_service:before {
+  content: "";
+  width: 20px;
+  background: var(--global-title-color);
+  height: 20px;
+  display: inline-block;
+  position: absolute;
+  left: 35px;
+}
+@media (min-width: 768px) {
+  .bloc_service .bloc_service-content .icone_service:before {
+    left: 25px;
+  }
+}
+.bloc_service .bloc_service-content .icone_service + span {
+  padding: 0 0 0 25px;
+}
+.bloc_service .bloc_service-content .icone_service.icone_service-url {
+  padding-left: 20px;
+}
+.bloc_service .bloc_service-content .icone_service.icone_service-url:before {
+  width: 12px;
+  height: 12px;
+  margin-top: 4px;
+}
+
+.servicesConnexes {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 10px;
+}
+.servicesConnexes .serviceConnexe {
+  width: 100%;
+  flex-grow: 0;
+  padding: 15px 0;
+  border-top: 1px solid #ccc;
+}
+.servicesConnexes .serviceConnexe .btn-consulter {
+  display: block;
+  max-width: 200px;
+  margin: 2rem auto;
+  border: 1px solid var(--global-link-color);
+  padding: 10px 35px 10px 25px;
+}
+.servicesConnexes .serviceConnexe .btn-consulter:after {
+  content: "";
+  width: 12px;
+  background: var(--global-link-color);
+  height: 15px;
+  display: inline-block;
+  position: relative;
+  left: 10px;
+  top: 2px;
+  -webkit-mask: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/icone-Fichier.svg") no-repeat center;
+          mask: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/icone-Fichier.svg") no-repeat center;
+}
+.servicesConnexes .serviceConnexe .btn-consulter:hover {
+  background-color: var(--global-link-color);
+  color: #fff;
+  text-decoration: none;
+}
+.servicesConnexes .serviceConnexe .btn-consulter:hover:after {
+  filter: brightness(0) invert(1);
+}
+.servicesConnexes .serviceConnexe:first-child {
+  border-top: 0;
+}
+
+@media (min-width: 768px) {
+  .servicesConnexes {
+    flex-direction: row;
+  }
+  .servicesConnexes .serviceConnexe {
+    flex-grow: 0;
+    padding: 0 25px;
+    border-top: 0;
+    border-left: 1px solid #ccc;
+  }
+  .servicesConnexes .serviceConnexe:first-child {
+    border-left: 0;
+    padding-left: 0;
+  }
+}
+.actifInformationnel {
+  border-top: 1px solid #ccc;
+  margin-top: 25px;
+  width: 100%;
+}
+.actifInformationnel:not(.publie) {
+  background-color: #eee;
+  opacity: 0.5;
+}
+
+.widget .actifInformationnel {
+  border-top: 1px solid #ccc;
+  margin-top: 25px;
+}
+.widget .actifInformationnel:first-of-type {
+  border-top: none;
+  margin-top: 0;
+}
+.widget .actifInformationnel:first-of-type h2 {
+  padding-top: 0;
+}
+.widget .actifInformationnel h2 {
+  margin-top: 0;
+  padding-top: 2rem;
+}/*# sourceMappingURL=service.css.map */

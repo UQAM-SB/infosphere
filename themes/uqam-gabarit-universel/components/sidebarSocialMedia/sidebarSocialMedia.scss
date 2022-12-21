@@ -1,0 +1,95 @@
+/**
+ * sidebarSocialMedia.scss
+ */
+
+// Import
+//@import "../../assets/styles/uqam-variables";
+@import "../../assets/styles/media-queries";
+
+
+.icon {
+	fill: var(--col-left-icon-color);
+	width: 44px;
+	height: 44px;
+	vertical-align: middle;
+
+	&:hover {
+		opacity: .6;
+	}
+}
+
+.hide-on-fallback {
+	display: block;
+	position: absolute;
+	left: -100%;
+	height: 0;
+	width: 0;
+	overflow: hidden;
+}
+
+// Appareils mobiles et moins
+// Affichage des médias sociaux pour la version mobile (pied de page)
+@include respond-below(lg) {
+	.widget_social_media_widget {
+		padding: 1rem 0 2rem;
+
+		.follow-us {
+			text-transform: uppercase;
+			color: var(--col-left-title-color);
+			font-size: 20px;
+			font-weight: 300;
+		}
+
+		ul {
+			display: inline-block;
+			line-height: 2;
+		}
+
+		li {
+			color: var(--col-left-text-color);
+			margin: 5px 0;
+			padding-bottom: 0;
+			padding-right: .5rem;
+
+			a {
+				margin-bottom: 0;
+				padding-bottom: 0;
+			}
+
+			&.follow-us:first-child {
+				padding-right: 1.25rem;
+			}
+		}
+	}
+}
+
+// Ordis de bureau et plus
+@include respond-above(lg) {
+	.widget_social_media_widget {
+		border-top: 2px solid rgba(255, 255, 255, 0.15);
+		padding: 30px 0;
+	}
+
+	#wrapper-social-media {
+		margin: 0 15px;
+	}
+
+	.follow-us {
+		text-transform: uppercase;
+		color: var(--col-left-title-color);
+		font-weight: 300;
+		margin-bottom: 6px;
+	}
+
+	.icon {
+		width: 24px;
+		height: 24px;
+		margin-bottom: .5rem;
+	}
+}
+
+@include respond-between(lg, xl) {
+	.follow-us {
+		display: block;
+	}
+}

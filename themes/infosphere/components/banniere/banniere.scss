@@ -1,0 +1,69 @@
+/**
+ * banniere.scss
+ * Tout ce qui concerne les bannières en haut de page ainsi que la couleur à la droite des bannières
+ */
+
+// Import
+//@import "../../../gabarit-universel/assets/styles/uqam-variables";
+@import "../../../gabarit-universel/assets/styles/media-queries";
+
+.compact .banner-top-menu {
+	margin-top: -5.5em;
+	z-index: 0;
+	padding-top: 11em;
+}
+.banner-top-menu {
+	margin-top: -5.5em;
+	z-index: 0;
+	padding-top: calc(var(--banner-height) + 5.5em);
+}
+
+// Variable
+$banner-compact-height-top-menu: 162px;
+
+// Background Couleur / Image
+.banner-zone .metaslider {
+	background: var(--banner-bg-color);
+}
+
+.banner-zone .widget_metaslider_widget {
+	width: 100%;
+}
+
+@include respond-above(lg) {
+	.banner-bg-color {
+		background: var(--banner-bg-color); // Old browsers
+		background: linear-gradient(to bottom, var(--banner-bg-color) 0px, var(--banner-bg-color) var(--banner-height-lg), #ffffff var(--banner-height-lg), #ffffff 100%);
+	}
+	.banner-bg-image {
+		background: var(--banner-bg-color); // Old browsers
+		background: var(--banner-bg-image) center 0 / auto var(--banner-height-lg) repeat-x, linear-gradient(to bottom, var(--banner-bg-color) 0px, var(--banner-bg-color) var(--banner-height-lg), #ffffff var(--banner-height-lg), #ffffff 100%);
+	}
+}
+
+@include respond-above(xl) {
+	.banner-bg-color {
+		background: var(--banner-bg-color); // Old browsers
+		background: linear-gradient(to bottom, var(--banner-bg-color) 0px, var(--banner-bg-color) var(--banner-height), #ffffff var(--banner-height), #ffffff 100%);
+	}
+	.banner-bg-image {
+		background: var(--banner-bg-color); // Old browsers
+		background: var(--banner-bg-image) center 0 / auto var(--banner-height) repeat-x, linear-gradient(to bottom, var(--banner-bg-color) 0px, var(--banner-bg-color) var(--banner-height), #ffffff var(--banner-height), #ffffff 100%);
+	}
+}
+
+// Compact / Pas page d'accueil
+body.compact:not(.home) {
+	@include respond-above(lg) {
+		.banner-zone {
+			height: $banner-compact-height-top-menu;
+			overflow-y: hidden;
+		}
+		.banner-bg-color {
+			background: linear-gradient(to bottom, var(--banner-bg-color) 0px, var(--banner-bg-color) $banner-compact-height-top-menu, #ffffff $banner-compact-height-top-menu, #ffffff 100%);
+		}
+		.banner-bg-image {
+			background: var(--banner-bg-image) center 0 / auto $banner-compact-height-top-menu repeat-x, linear-gradient(to bottom, var(--banner-bg-color) 0px, var(--banner-bg-color) $banner-compact-height-top-menu, #ffffff $banner-compact-height-top-menu, #ffffff 100%);
+		}
+	}
+}

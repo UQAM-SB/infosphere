@@ -1,0 +1,286 @@
+/**
+ * service.scss
+ */
+// Import
+@import "../../assets/styles/uqam-variables";
+@import "../../assets/styles/media-queries";
+
+.fiche-service {
+	.fiche-contenu {
+		& h2, & h3, & h4, & h5, & h6 { margin-top: 0; }
+
+		section {
+			border-top: 1px solid $couleur-bordure;
+
+			&:first-of-type {
+				border-top: 0;
+			}
+		}
+	}
+}
+
+.usagers {
+	margin: 20px 0;
+	display: flex;
+	flex-wrap: nowrap;
+
+	&-term {
+		background: #333;
+		color: #fff;
+		padding: 1px 5px;
+		font-size: 0.75em;
+		text-transform: uppercase;
+		display: inline-block;
+		margin: 3px 1px;
+	}
+
+	&-label {
+		display: inline-block;
+		text-transform: uppercase;
+		font-size: 0.875rem;
+		font-weight: 500;
+		margin: 3px 10px 3px 0;
+	}
+
+	&-data {
+		display: inline-block;
+	}
+}
+
+.bloc_service {
+	border: 1px solid $couleur-bordure;
+	margin-bottom: 15px;
+
+	.bloc_service-titre {
+		margin: 0;
+		background-color: var(--global-title-color);
+		color: #fff;
+		font-size: 1em;
+		text-transform: uppercase;
+		padding: 10px 10px 10px 55px;
+
+		&:before {
+			content: '';
+			width: 20px;
+			background: #fff;
+			height: 20px;
+			display: inline-block;
+			position: absolute;
+			left: 35px;
+
+			@include respond-above(md) {
+				left: $service-padding-bloc;
+			}
+		}
+	}
+
+	// Icônes
+	.icone_service-obtenir:before {
+		@include mask-image(icone-Obtention, no-repeat center / 1em);
+	}
+	.icone_service-telephone:before {
+		@include mask-image(icone-Telephone, no-repeat center / 1em);
+	}
+	.icone_service-courriel:before {
+		@include mask-image(icone-Courriel, no-repeat center / 1em);
+	}
+	.icone_service-formulaire:before {
+		@include mask-image(icone-Fleche, no-repeat 6px center / 0.65em);
+	}
+	.icone_service-local:before {
+		@include mask-image(icone-Local, no-repeat center / 1em);
+	}
+	.icone_service-url:before {
+		@include mask-image(icone-Fleche, no-repeat center);
+	}
+	.icone_service-horaire:before {
+		@include mask-image(icone-Horaire, no-repeat center / 1em);
+	}
+	.icone_service-tarifs:before {
+		@include mask-image(icone-Tarifs, no-repeat center / 1em);
+	}
+	.icone_service-partenaires:before {
+		@include mask-image(icone-Partenaires, no-repeat center / 1em);
+	}
+	.icone_service-personne:before {
+		@include mask-image(icone-Personne, no-repeat center / 1em);
+	}
+
+	.bloc_service-content {
+		padding: $service-padding-bloc 20px;
+		font-size: 0.875rem;
+
+		@include respond-above(md) {
+			padding: $service-padding-bloc;
+		}
+
+		> div {
+			margin-top: 20px;
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+		h3 {
+			margin: 0 0 1rem;
+			font-size: 1rem;
+			&:nth-child(2n) {
+				border-top: 1px solid $couleur-bordure;
+				padding-top: 20px;
+			}
+		}
+		p:last-child {
+			margin-bottom: 0;
+		}
+		ul {
+			padding-left: 20px;
+
+			li a {
+				font-size: 0.875rem;
+			}
+		}
+		.point_contact {
+			margin-bottom: 1rem;
+
+			p {
+				margin-bottom: 5px;
+				padding-left: $service-padding-bloc;
+			}
+			p:last-child {
+				margin-bottom: 0;
+			}
+		}
+		.point_contact:last-child {
+			margin-bottom: 0;
+		}
+		.bloc_service-description {
+			p {
+				padding-left: 0;
+			}
+		}
+		.bloc_service-label {
+			font-weight: 500;
+		}
+		.icone_service {
+			display: block;
+			font-size: 1em;
+			padding: 0 0 0 $service-padding-bloc;
+
+			&:before {
+				content: '';
+				width: 20px;
+				background: var(--global-title-color);
+				height: 20px;
+				display: inline-block;
+				position: absolute;
+				left: 35px;
+				@include respond-above(md) {
+					left: $service-padding-bloc;
+				}
+			}
+			+ span {
+				padding: 0 0 0 25px;
+			}
+
+			&.icone_service-url {
+				padding-left: 20px;
+				&:before {
+					width: 12px;
+					height: 12px;
+					margin-top: 4px;
+				}
+			}
+		}
+	}
+}
+
+.servicesConnexes {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	padding-top: 10px;
+	.serviceConnexe {
+		width: 100%;
+		flex-grow: 0;
+		padding: 15px 0;
+		border-top: 1px solid $couleur-bordure;
+
+		.btn-consulter {
+			display: block;
+			max-width: 200px;
+			margin: 2rem auto;
+			border: 1px solid var(--global-link-color);
+			padding: 10px 35px 10px 25px;
+
+			&:after {
+				content: '';
+				width: 12px;
+				background: var(--global-link-color);
+				height: 15px;
+				display: inline-block;
+				position: relative;
+				left: 10px;
+				top: 2px;
+				@include mask-image(icone-Fichier, no-repeat center);
+			}
+
+			&:hover {
+				background-color: var(--global-link-color);
+				color: #fff;
+				text-decoration: none;
+
+				&:after {
+					filter: brightness(0) invert(1);
+				}
+			}
+		}
+	}
+	.serviceConnexe:first-child {
+		border-top: 0;
+	}
+}
+
+@include respond-above(md) {
+	.servicesConnexes {
+		flex-direction: row;
+
+		.serviceConnexe {
+			flex-grow: 0;
+			padding: 0 25px;
+			border-top: 0;
+			border-left: 1px solid $couleur-bordure;
+
+			&:first-child {
+				border-left: 0;
+				padding-left: 0;
+			}
+		}
+	}
+}
+
+.actifInformationnel {
+	border-top: 1px solid $couleur-bordure;
+	margin-top: 25px;
+	width: 100%;
+
+	&:not(.publie) {
+		background-color: #eee;
+		opacity: 0.5;
+	}
+}
+
+.widget .actifInformationnel {
+	border-top: 1px solid $couleur-bordure;
+	margin-top: 25px;
+
+	&:first-of-type {
+		border-top: none;
+		margin-top: 0;
+		h2 {
+			padding-top: 0;
+		}
+	}
+	h2 {
+		margin-top: 0;
+		padding-top: 2rem;
+	}
+}

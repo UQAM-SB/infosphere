@@ -1,0 +1,88 @@
+@charset "UTF-8";
+/**
+ * editor.scss
+ * Import tous les élément SCSS pour l'ADMIN de Wordpress
+ */
+.block-editor-panel-color-gradient-settings {
+  display: none;
+}
+
+body.wp-editor {
+  color: #333;
+}
+body.wp-editor .mce-content-body a {
+  color: #007bff;
+  text-decoration: none;
+}
+body.wp-editor .mce-content-body span.button {
+  text-align: center;
+  display: block;
+}
+body.wp-editor .mce-content-body span.button a {
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #0079be;
+  cursor: pointer;
+}
+body.wp-editor .mce-content-body span.button a:hover {
+  background-color: #004972;
+  text-decoration: none;
+}
+body.wp-editor .mce-content-body span.externe a {
+  display: inline-block;
+  padding-right: 20px;
+  cursor: pointer;
+  background: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/png/fleche_bleu_uqam@2x.png") no-repeat right/7px;
+  background: url("https://gabarit-adaptatif.uqam.ca/statique/images/icones/svg/fleche_bleu_uqam.svg") no-repeat right/7px;
+}
+body.wp-editor .mce-content-body span.externe a:hover {
+  text-decoration: underline;
+}
+body.wp-editor .mce-content-body div.encadre {
+  display: block;
+  padding: 40px;
+  border: solid #d9d9d9 1px;
+}
+body.wp-editor .mce-content-body table {
+  margin: 0 0 1.5em;
+  width: 100%;
+}
+body.wp-editor .mce-content-body table tr {
+  background: #fff;
+}
+body.wp-editor .mce-content-body table tr:nth-child(even) {
+  background: #eee;
+}
+body.wp-editor .mce-content-body table thead {
+  background: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+body.wp-editor .mce-content-body table thead + tbody tr {
+  background: #fff;
+}
+body.wp-editor .mce-content-body table thead + tbody tr:nth-child(odd) {
+  background: #eee;
+}
+body.wp-editor .mce-content-body table thead + tbody tr:nth-child(even) {
+  background: #fff;
+}
+body.wp-editor .mce-content-body table thead th {
+  text-transform: uppercase;
+  padding: 25px 20px;
+}
+body.wp-editor .mce-content-body table td {
+  padding: 15px 20px;
+}
+body.wp-editor .mce-content-body table caption {
+  caption-side: bottom;
+  text-align: left;
+}
+body.wp-editor .mce-layout-col button i {
+  background-repeat: no-repeat;
+  background-size: inherit;
+  margin-top: -3px;
+}/*# sourceMappingURL=editor.css.map */

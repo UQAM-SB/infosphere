@@ -1,0 +1,261 @@
+/**
+ * _html-basics.scss
+ */
+
+// Import
+@import "../../assets/styles/uqam-variables";
+@import "../../assets/styles/media-queries";
+
+html,
+.content-center {
+	background: #fff;
+}
+
+body {
+	color: #000000;
+}
+
+p, dl, dt, dd, li, th, td, pre, code,
+.entry-summary,
+.textwidget {
+	color: var(--global-text-color);
+}
+
+a,
+a:hover {
+	color: var(--global-link-color);
+}
+
+
+// CONTENU GAUCHE
+@include respond-below(lg) {
+	#content-left {
+		background-color: var(--menu-bg-color);
+		padding: 2rem 0;
+	}
+}
+
+
+// CONTENU CENTRE
+.content-center {
+	color: #333;
+
+	// -- Titre
+	#main-content,
+	#sidebar-front {
+
+		.entry-title {
+			font-size: 1rem;
+			font-weight: normal;
+			line-height: 1.5rem;
+		}
+
+		.entry-meta {
+			font-size: .9rem;
+		}
+
+		.title-front,
+		.widget-title,
+		.widget-title-link {
+			display: inline-block;
+			text-transform: uppercase;
+			font-size: .9rem;
+		}
+
+		.title-front,
+		.widget-title {
+			padding: 7px 10px 6px 10px;
+			background-color: var(--home-bg-title);
+			color: var(--home-title);
+		}
+
+		.widget-title-link {
+			padding: 7px 0 6px 5px;
+			background: var(--home-bg-title); /* Old browsers */
+			background: linear-gradient(to left, var(--home-bg-link-title) 35px, var(--home-bg-link-title) 35px, var(--home-bg-link-title) 35px, var(--home-bg-link-title) 35px, var(--home-bg-title) 35px); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='var(--home-bg-link-title)', endColorstr='var(--home-bg-title)', GradientType=1); /* IE6-9 */
+		}
+
+		.widget-title-link a {
+			padding: 8px 25px 8px 5px;
+			text-transform: uppercase;
+			color: var(--home-title);
+			text-decoration: none;
+
+			&.side-link {
+				padding: 9px 10px;
+			}
+
+			&.white {
+				@include bg-image(fleche_blanc, left center/7px no-repeat);
+			}
+
+			&.dark {
+				@include bg-image(fleche_bleu, left center/7px no-repeat);
+			}
+
+			&:hover, &:focus, &:active {
+				opacity: .8;
+				text-decoration: none;
+			}
+		}
+	}
+
+	// -- Section droite : varia (#sidebar)
+	#sidebar {
+
+		aside {
+			border-bottom: none !important;
+			margin-bottom: .5rem !important;
+		}
+
+		aside:last-child {
+			border-bottom: none !important;
+		}
+
+		.widget {
+			border-top: 1.5px solid rgba(255, 255, 255, 0.3);
+		}
+
+		.widget-title {
+			margin-bottom: 0 !important;
+			padding: .5rem 1rem;
+			border: 1px solid var(--col-right-bg-title);
+			background-color: var(--col-right-bg-title);
+			color: var(--col-right-title);
+			font-size: .95rem;
+			text-transform: uppercase;
+		}
+
+		.textwidget {
+			border-right: 1px solid var(--col-right-border-color);
+			border-bottom: 1px solid var(--col-right-border-color);
+			border-left: 1px solid var(--col-right-border-color);
+			padding: 1.4rem 1rem .5rem 1rem;
+			font-size: .9rem;
+		}
+	}
+
+	// -- Listes
+	ul li {
+		list-style: none;
+		padding-left: 20px;
+		position: relative;
+		/*
+		list-style-image: url(#{$gabarit_url}/svg/puce.svg);
+		&::marker {
+			width: 8px;
+			height: 8px;
+		}
+		*/
+		&:before {
+			background-color: #CCC;
+			content: '';
+			display: inline-block;
+			height: 8px;
+			position: absolute;
+				top: 9px;
+				left: 0;
+			width: 8px;
+		}
+	}
+	ul, ol {
+		margin-bottom: 20px;
+		padding-top: 10px;
+		padding-left: 15px;
+		li {
+			margin-bottom: 1.25rem;
+		}
+	}
+	ul {
+		padding-left: 0;
+	}
+
+	// -- Paragraphe
+	p {
+		margin-bottom: 1.25rem;
+	}
+
+}
+
+// -- Section principale : en vedette (#notice)
+@include respond-above(lg) {
+	#notice {
+		padding-left: 3rem;
+		padding-right: 1rem;
+	}
+}
+
+// -- Section centrale : pied de page de contenu (#main-content-footer)
+#main-content-footer > aside:last-child {
+	border-bottom: none !important;
+}
+//ACCUEIL
+.home {
+
+}
+
+// Page ERROR 404
+@include respond-above(lg) {
+	.error-404 .btn-block {
+		display: inline-block;
+		width: auto;
+	}
+
+	#options-404 a {
+		min-width: 12.6rem;
+		margin-top: .25rem;
+	}
+
+	.error-404 .btn-block + .btn-block {
+		margin-top: 0rem;
+	}
+}
+
+
+// COMMENTAIRES
+.comments-wrapper {
+	.comments {
+		.comment-author {
+			.avatar {
+				display: none;
+			}
+		}
+	}
+	.comment-respond {
+		label {
+			display: block;
+		}
+	}
+}
+
+
+// WIDGETS
+
+// -- Social Media Profile
+.social_media_title {
+	background-color: var(--home-title);
+	display: inline-block;
+	height: 20px;
+	margin: -5px 10px -5px -5px;
+	width: 20px;
+}
+
+.social_media_title_facebook {
+	@include mask-image(facebook_rouge_carre, no-repeat center);
+}
+
+.social_media_title_twitter {
+	@include mask-image(twitter_blanc_carre, no-repeat center);
+}
+
+.social_media_title_instagram {
+	@include mask-image(instagram_blanc, no-repeat center);
+}
+
+
+// LÉGENDE D'IMAGE
+img+figcaption {
+	font-size: 	0.875rem;
+	margin: 5px 0 20px;
+}
