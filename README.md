@@ -1,6 +1,3 @@
-# Infosphère
-Thème Wordpress pour Infosphère
-
 # Démo
 Le site Infosphère est accessible à cette URL [https://infosphere.uqam.ca](https://infosphere.uqam.ca)
 
