@@ -9,7 +9,7 @@ Le site Infosphère est accessible à cette URL [https://infosphere.uqam.ca](htt
 
 
 # Extensions utilisées
-Le thème Wordpress actuel utilise les extensions gratuites suivantes qu'il faut faciliter l'installation et profiter pleinement des fonctionnalités :
+Le thème Wordpress actuel utilise les extensions gratuites suivantes pour faciliter l'installation et profiter pleinement des fonctionnalités :
 
 - [WordPress Importer](https://en-ca.wordpress.org/plugins/wordpress-importer/) : pour importer le contenu Wordpress;
 - [Better Search Replace](https://en-ca.wordpress.org/plugins/better-search-replace/) : pour remplacer les hyperliens après l'importation;
