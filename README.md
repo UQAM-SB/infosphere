@@ -22,7 +22,7 @@ Pour plus d'information sur l'utilisation d'un thème enfant, consultez : [fr:Th
 # Procédure d'installation
 1. Installez la version la plus récente de Wordpress : [https://fr.wordpress.org/download/](https://fr.wordpress.org/download/) sur un serveur;
 2. Assurez-vous de supprimer les contenus (billets, pages, commentaires), les widgets et les menus que vous **ne souhaitez pas voir apparaître** dans votre instance Infosphère.
-3. Copiez les répertoires "infosphere" et "uqam-gabarit-universel" dans le répertoire "themes" de votre installation Wordpress et activer le thème Infosphère;
+3. Copiez les répertoires "infosphere" et "uqam-gabarit-universel" dans le répertoire "themes" de votre installation Wordpress et activez le thème Infosphère;
 4. Téléchargez et activez les extensions [WordPress Importer](https://en-ca.wordpress.org/plugins/wordpress-importer/), [Better Search Replace](https://en-ca.wordpress.org/plugins/better-search-replace/), [Formidable Forms](https://en-ca.wordpress.org/plugins/formidable/) et [PublishPress Blocks](https://wordpress.org/plugins/advanced-gutenberg/).
 
 # Procédure d'importation du contenu d'Infosphère
