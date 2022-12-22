@@ -46,7 +46,7 @@ Infosphère présente 2 formulaires au sein de ses pages : "Caractéristiques de
 2. Dans la première section "La page d’accueil affiche", sélectionnez le bouton radio "Une page statique" et sous le menu déroulant "Page d'accueil", sélectionnez la page dont le titre est "Gagner du temps et réaliser de meilleurs travaux";
 3. Cliquez sur le bouton "Enregistrer les modifications"; 
 
-Vous devriez maintenant voir la page d'accueil d'Infosphère avec les 4 vignettes illustrant les étapges de la recherche ainsi que le bouton "Boîte à outils". Si ce n'est pas le cas, assurez-vous d'avoir suivi correctement la procédure et vérifiez si les liens qui appellent les images ne retournent pas une erreur 404 (si tel est le cas, il faudra effectuer un rechercher/remplacer des liens, voir procédure Modification en lot des hyperliens). 
+Vous devriez maintenant voir la page d'accueil d'Infosphère avec les 4 vignettes illustrant les étapes de la recherche ainsi que le bouton "Boîte à outils". Si ce n'est pas le cas, assurez-vous d'avoir suivi correctement la procédure et vérifiez si les liens qui appellent les images ne retournent pas une erreur 404 (si tel est le cas, il faudra effectuer un rechercher/remplacer des liens, voir procédure Modification en lot des hyperliens). 
 
 ## Affichage des menus
 1. Dans le tableau de bord de Wordpress, sous le menu "Apparence", cliquez sur "Menus";
